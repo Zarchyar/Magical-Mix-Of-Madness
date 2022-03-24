@@ -1,0 +1,20 @@
+{
+	id: "7A5ACF7EA0BBD98C"
+	order_index: 3
+	title: "Master_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:warm_void", weight: 8 }
+		{ item: "losttrinkets:golden_melon", weight: 8 }
+		{ item: "losttrinkets:wither_nail", weight: 8 }
+		{ item: "losttrinkets:serpent_tooth", weight: 8 }
+		{ item: "losttrinkets:mad_piggy", weight: 8 }
+		{ item: "losttrinkets:minds_eye", weight: 8 }
+		{ item: "losttrinkets:golden_swatter", weight: 8 }
+		{ item: "losttrinkets:sticky_mind", weight: 8 }
+		{ item: "losttrinkets:fire_mind", weight: 8 }
+		{ item: "losttrinkets:tha_golem", weight: 8 }
+		{ item: "losttrinkets:dragon_breath", weight: 8 }
+	]
+}

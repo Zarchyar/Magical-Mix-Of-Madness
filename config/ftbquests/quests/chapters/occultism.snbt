@@ -1,0 +1,646 @@
+{
+	id: "6EB2A034A46AA1F9"
+	group: ""
+	order_index: 18
+	filename: "occultism"
+	title: "Occultism"
+	icon: "occultism:datura"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.5d
+			subtitle: "What a Strange Plant"
+			description: [
+				"You can get the seed for this plant by punching grass"
+				""
+				"Consuming it lets you see where The Other Place overlaps into this world allowing collection of certain materials that can otherwise not be collected."
+			]
+			id: "5E7BE4EA7F93DC5A"
+			tasks: [{
+				id: "661B077BD8F0A915"
+				type: "item"
+				item: "occultism:datura"
+			}]
+		}
+		{
+			title: "Otherworldy Resources"
+			x: 1.0d
+			y: 0.5d
+			description: [
+				"Burning a diamond in strang fire, sure seems normal"
+				""
+				"Set a Demon's Dream Fruit on fire to creat a special purple flame that can convert certain materials into other materials."
+			]
+			dependencies: ["5E7BE4EA7F93DC5A"]
+			id: "0C03320237EDE115"
+			tasks: [
+				{
+					id: "5BA7E005EE6FFB1F"
+					type: "item"
+					item: "occultism:otherstone"
+				}
+				{
+					id: "3AFA3635020B18B0"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling_natural"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1DBA64083F5F636C"
+					type: "item"
+					item: "occultism:purified_ink"
+				}
+				{
+					id: "33286D43DC4720CA"
+					type: "item"
+					item: "occultism:spirit_attuned_gem"
+				}
+			]
+		}
+		{
+			title: "Sacrificial Bowls"
+			x: 2.5d
+			y: 0.5d
+			description: [
+				"These hold the items needed to compleat varius rituals"
+				""
+				"Make sure to check the Dictionary of Spirits for information you should have one inside the akashic tome you spawned in with."
+			]
+			dependencies: ["0C03320237EDE115"]
+			id: "7EFADA8F5DDA0EC9"
+			tasks: [
+				{
+					id: "0F412BF0EAFF0EFD"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "7369E3886C912D05"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			description: [
+				"This is the first Chalk you can create and will unlock acces to the following pentacle:"
+				""
+				"Aviar's Circle"
+			]
+			dependencies: ["7EFADA8F5DDA0EC9"]
+			id: "3AD9348BA0DBBB3A"
+			tasks: [
+				{
+					id: "2E04506CDAC0D216"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3CDFDB3E89A69CEE"
+					type: "item"
+					item: "occultism:brush"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			subtitle: "Used to form pentacles"
+			description: ["Emmits some light"]
+			dependencies: [
+				"3AD9348BA0DBBB3A"
+				"0F1F9C7875CAF3DA"
+			]
+			id: "0020AC62780FA83F"
+			tasks: [{
+				id: "60547A7986484B85"
+				type: "item"
+				item: "occultism:candle_white"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			description: [
+				"This is the second Chalk you can create and will unlock acces to the following pentacles:"
+				""
+				"Eziveus' Spectral Compulsion"
+				"Hedyrin's Lure"
+			]
+			dependencies: ["5F4F309846B2918B"]
+			id: "71F243D3E812A7FC"
+			tasks: [{
+				id: "1AD938A5102674A5"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 20.5d
+			y: 0.5d
+			description: [
+				"This is the forth and finnal Chalk you can create and will unlock acces to the following pentacles:"
+				""
+				"Abras' Conjure"
+				"Abras' Commanding Conjure"
+				"Fatma's Incentivized Attraction"
+				"Uphyxes Inverted Tower"
+			]
+			dependencies: ["0057D50F65E459C5"]
+			id: "680B6C1853E90CC5"
+			tasks: [{
+				id: "53E1C1931807FC34"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.5d
+			description: [
+				"This is the third Chalk you can create and will unlock acces to the following pentacles:"
+				""
+				"Ophyx' Calling"
+				"Strigeor's Higher Binding"
+				"Ihagan's Enthrallment"
+				"Abras' Open Conjure"
+				"Osorin's Unbound Calling"
+				"Sevira's Permanent Confinement"
+			]
+			dependencies: ["5BBCA4770F9BFB84"]
+			id: "2605E860AEFA28E7"
+			tasks: [{
+				id: "6FBBBFF6FF192B94"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.0d
+			subtitle: "Used to form pentacles"
+			description: ["Emmits some light"]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "09D5D0DDE37092CA"
+			tasks: [{
+				id: "1E42A5B9F88FEFD8"
+				type: "item"
+				item: "occultism:spirit_attuned_crystal"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -1.0d
+			subtitle: "Used to form pentacles"
+			dependencies: ["2605E860AEFA28E7"]
+			id: "16BDCE510F1F74A9"
+			tasks: [{
+				id: "27B92AF08292BB85"
+				type: "item"
+				item: "minecraft:skeleton_skull"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -1.0d
+			subtitle: "Used to form pentacles"
+			dependencies: ["2605E860AEFA28E7"]
+			id: "32AA3D3E4916E080"
+			tasks: [{
+				id: "101180E1969F5FD0"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			subtitle: "Much less tedious"
+			description: ["Summon an otherworld sapling trader and drop some saplings near it"]
+			dependencies: ["3AD9348BA0DBBB3A"]
+			id: "3908EDCA68994444"
+			tasks: [{
+				id: "01263CAA96AE8553"
+				type: "item"
+				item: "occultism:otherworld_sapling"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			subtitle: "Crushing Time"
+			description: ["Summon a Foliot crusher and drop some gold ore nearby for it to crush"]
+			dependencies: ["3AD9348BA0DBBB3A"]
+			id: "5F4F309846B2918B"
+			tasks: [{
+				id: "06E803BB1E671379"
+				type: "item"
+				item: "occultism:gold_dust"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 0.5d
+			subtitle: "A battle to the death"
+			dependencies: ["2605E860AEFA28E7"]
+			id: "0057D50F65E459C5"
+			tasks: [{
+				id: "4DFE9A711808C454"
+				type: "item"
+				item: "occultism:afrit_essence"
+			}]
+		}
+		{
+			title: "Endstone and Obsidian Dust"
+			x: 13.0d
+			y: 0.5d
+			subtitle: "Crushing time once more"
+			description: ["Better Crusher spirits get better speeds and yeilds from your ores"]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "5BBCA4770F9BFB84"
+			tasks: [
+				{
+					id: "2EE646FCDEB45E53"
+					type: "item"
+					title: "Any #forge:dusts/end_stone"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/end_stone"
+						}
+					}
+				}
+				{
+					id: "64A939D3361705F1"
+					type: "item"
+					title: "Any #forge:dusts/obsidian"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts/obsidian"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			subtitle: "See the unseen"
+			description: ["Allows you to see the otherworld blocks without constantly consuming the demon's dream fruit"]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "6D7FCAA0F911BF5C"
+			tasks: [{
+				id: "341A17C5BFAD5189"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 3.5d
+			description: ["It's a big bag not much more to say"]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "3059052731363926"
+			tasks: [{
+				id: "3B4AF7EC0F22D0F8"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Bartimaeus"
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.5d
+			description: ["Part of the Dimensional Storage Actuator"]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "4178CAC31CC9D7EC"
+			tasks: [{
+				id: "420945FFEF47EB9B"
+				type: "item"
+				item: "occultism:storage_controller_base"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.5d
+			subtitle: "Biginate the storage"
+			description: [
+				"Note: this is useless without a dimensional storage actuator"
+				""
+				"To use this(and its upgraded forms) have it set up with strait line of sight to the upper half of a Dimensional Storage Actuator with the side with the metalic ring facing the upper half of the Dimensional Storage Actuator"
+				""
+				""
+				"Each one of these adds 256 slots to a Dimensional Storage Actuator and you can use up to 6 of them (one facing each side of the Dimensional Storage Actuator)"
+			]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "49E604BDEEC9FC7F"
+			tasks: [{
+				id: "6ECC92E0D76D0FA1"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 4.0d
+			subtitle: "A wireless terminal"
+			description: [
+				"Note: this is useless without a dimensional storage actuator"
+				""
+				"You can link this to a Dimensional Storage Actuator by clicking it onto it this can then be placed elsewhere to acces the linked Dimensional Storage Actuator"
+			]
+			dependencies: ["71F243D3E812A7FC"]
+			id: "59673469F96A2176"
+			tasks: [{
+				id: "000790AC6B285AC3"
+				type: "item"
+				item: {
+					id: "occultism:stable_wormhole"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 14.5d
+			y: 1.5d
+			dependencies: ["2605E860AEFA28E7"]
+			id: "48CC5CA4AE618AB8"
+			tasks: [{
+				id: "3C482C443E5DDB9C"
+				type: "item"
+				item: {
+					id: "occultism:dimensional_matrix"
+					Count: 1b
+					tag: {
+						spiritName: "Raredure"
+					}
+				}
+			}]
+		}
+		{
+			x: 14.5d
+			y: 2.5d
+			subtitle: "Storage System Time"
+			description: ["Acts as a storage system that can hold items and has a inbuilt crafting table"]
+			dependencies: [
+				"48CC5CA4AE618AB8"
+				"4178CAC31CC9D7EC"
+			]
+			id: "3C1DB4F3B59E9653"
+			tasks: [{
+				id: "6B358F9B39041307"
+				type: "item"
+				item: "occultism:storage_controller"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 3.5d
+			description: ["Each one of these adds 512 slots to a Dimensional Storage Actuator and you can use up to 6 of them (one facing each side of the Dimensional Storage Actuator)"]
+			dependencies: [
+				"49E604BDEEC9FC7F"
+				"2605E860AEFA28E7"
+			]
+			id: "57E8A5B11A817F57"
+			tasks: [{
+				id: "56CE773A8F66E259"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.5d
+			description: ["Each one of these adds 1024 slots to a Dimensional Storage Actuator and you can use up to 6 of them (one facing each side of the Dimensional Storage Actuator)"]
+			dependencies: [
+				"2605E860AEFA28E7"
+				"57E8A5B11A817F57"
+			]
+			id: "62719936A9E52033"
+			tasks: [{
+				id: "4C4DCF16F2CDBEE5"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 2.5d
+			dependencies: ["2605E860AEFA28E7"]
+			id: "453080F114DD8911"
+			tasks: [{
+				id: "6978ED1A22F5BB44"
+				type: "item"
+				item: {
+					id: "occultism:soul_gem"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 19.0d
+			y: 2.5d
+			dependencies: ["453080F114DD8911"]
+			id: "4EA27D7A34F4BBDD"
+			tasks: [{
+				id: "078788F114506755"
+				type: "item"
+				item: {
+					id: "occultism:familiar_ring"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							hasFamiliar: 0b
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 1.5d
+			dependencies: ["2605E860AEFA28E7"]
+			id: "4C4B08E314A15A3E"
+			tasks: [{
+				id: "48B9D15A095D9E61"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			subtitle: "Possessed Pick"
+			description: ["This pickaxe is needed in order to be able to harvest your first Iesnium"]
+			dependencies: ["2605E860AEFA28E7"]
+			id: "4A7000BCB12093CE"
+			tasks: [{
+				id: "6E661B1AAD43F570"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Jagmaractron"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -4.0d
+			subtitle: "Shiny"
+			description: ["This pick can be used to harvest iesnium and has better durability and mineing level compaired to the prior tool"]
+			dependencies: ["4A7000BCB12093CE"]
+			id: "292555CB8AAF6521"
+			tasks: [{
+				id: "402A6D014B061462"
+				type: "item"
+				item: {
+					id: "occultism:iesnium_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 20.5d
+			y: 4.5d
+			description: ["Each one of these adds 2048 slots to a Dimensional Storage Actuator and you can use up to 6 of them (one facing each side of the Dimensional Storage Actuator)"]
+			dependencies: [
+				"680B6C1853E90CC5"
+				"62719936A9E52033"
+			]
+			id: "27355312FA2BED40"
+			tasks: [{
+				id: "59FB56D387E0EB32"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["Causes certain mobs to drop additional drops"]
+			dependencies: ["5E7BE4EA7F93DC5A"]
+			id: "5E2BEF26374F9F58"
+			tasks: [{
+				id: "41CFAF6D48FBA9E2"
+				type: "item"
+				item: {
+					id: "occultism:butcher_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Tallow"
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["5E2BEF26374F9F58"]
+			id: "0F1F9C7875CAF3DA"
+			tasks: [{
+				id: "50CBC040AAE43B45"
+				type: "item"
+				title: "Any #forge:tallow"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tallow"
+					}
+				}
+			}]
+		}
+		{
+			x: 17.0d
+			y: 3.5d
+			subtitle: "Wireless Storage"
+			description: ["You can link this to a Dimensional Storage Actuator by clicking it onto it this can then be used to remotly acces the linked Dimentional Storage Actuator"]
+			dependencies: ["2605E860AEFA28E7"]
+			id: "51086F886F9C0B65"
+			tasks: [{
+				id: "1CA53B5CFC6F6949"
+				type: "item"
+				item: {
+					id: "occultism:storage_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: [
+				"33286D43DC4720CA"
+				"0C03320237EDE115"
+			]
+			dependency_requirement: "all_started"
+			id: "4FF00C85EB158031"
+			tasks: [{
+				id: "62EF4CB5E37BEFCE"
+				type: "item"
+				item: {
+					id: "occultism:divination_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

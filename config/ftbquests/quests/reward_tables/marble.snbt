@@ -1,0 +1,10 @@
+{
+	id: "71E0882E5B7C8576"
+	order_index: 8
+	title: "Marble"
+	loot_size: 1
+	rewards: [
+		{ item: "tombstone:dark_marble", count: 5 }
+		{ item: "tombstone:white_marble", count: 5 }
+	]
+}

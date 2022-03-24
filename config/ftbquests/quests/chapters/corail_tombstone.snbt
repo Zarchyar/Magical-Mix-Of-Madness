@@ -1,0 +1,442 @@
+{
+	id: "0890DC9EE24FCC54"
+	group: ""
+	order_index: 8
+	filename: "corail_tombstone"
+	title: "Corail Tombstone"
+	icon: {
+		id: "tombstone:ankh_of_pray"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to the World of Death Magic"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Take advantage of your demise"
+			description: [
+				"Make sure to set the \"Knoldge of Death\" keybind"
+				""
+				"Corail Tombstone Provides a variety of handy items and skills to aid you in your world"
+				""
+				"You gain knoldge of death (skill points) by useing a variety of the items from the mod as well as compleating the advancments the mod adds (no not thease quest the things found in the minecraft advancments menue)"
+			]
+			id: "16D8683FB7EFD432"
+			tasks: [{
+				id: "0EBAAC8E5B2A8D53"
+				type: "stat"
+				icon: {
+					id: "tombstone:decorative_tombstone"
+					Count: 1b
+					tag: {
+						model_texture: 0
+					}
+				}
+				stat: "minecraft:deaths"
+				value: 1
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			subtitle: "Death but in Item Form"
+			description: [
+				"Use the keybind you set for knoldge of death to open the skill menue and in game documentation of Corail Tombstone"
+				""
+				"Once youve opend it click config and select your favorit grave to get your first Essance of Death"
+			]
+			dependencies: ["16D8683FB7EFD432"]
+			id: "1BE5432D346F7D5F"
+			tasks: [{
+				id: "2819CC08D2D2DAD2"
+				type: "item"
+				item: "tombstone:essence_of_undeath"
+			}]
+			rewards: [{
+				id: "1A66C8897B48CAD8"
+				type: "item"
+				item: "tombstone:essence_of_undeath"
+			}]
+		}
+		{
+			title: "Your First Grave"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Time to harvest some souls"
+			description: [
+				"Most of the items provided by corail tombstone must be enchanted with a graves soul."
+				""
+				"To collect a soul simply place down one of the decorative graves and wait eventially it will collects a soul (indecated by a particle effect floating around the grave)"
+			]
+			dependencies: [
+				"1F52C65F49051419"
+				"1BE5432D346F7D5F"
+			]
+			id: "2F6F74561220799E"
+			tasks: [
+				{
+					id: "7B066EEE862DD517"
+					type: "item"
+					title: "Any #tombstone:decorative_graves"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tombstone:decorative_graves"
+						}
+					}
+				}
+				{
+					id: "22A5762115A4F149"
+					type: "item"
+					item: {
+						id: "tombstone:ankh_of_pray"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "A strang powder the undead sometimes drop"
+			dependencies: ["16D8683FB7EFD432"]
+			id: "232D67982E5E37A4"
+			tasks: [{
+				id: "066CC454829C8267"
+				type: "item"
+				item: "tombstone:grave_dust"
+			}]
+			rewards: [{
+				id: "16744E889150FED5"
+				type: "item"
+				item: "tombstone:grave_dust"
+				count: 5
+			}]
+		}
+		{
+			title: "Deaths Marble"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "Perfect for carving a grave"
+			dependencies: ["232D67982E5E37A4"]
+			id: "1F52C65F49051419"
+			tasks: [{
+				id: "790453952C9D72A1"
+				type: "item"
+				title: "Any #tombstone:grave_marbles"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tombstone:grave_marbles"
+					}
+				}
+			}]
+			rewards: [{
+				id: "622DE1BFA65DA16B"
+				type: "choice"
+				icon: "tombstone:dark_marble"
+				table_id: 8205708253753804150L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["2F6F74561220799E"]
+			id: "49AFAAEFA9B2DC5B"
+			tasks: [{
+				id: "0378DCC4DB4C1648"
+				type: "item"
+				item: "tombstone:strange_scroll"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			dependencies: ["2F6F74561220799E"]
+			id: "791ADCC4B9CAE688"
+			tasks: [{
+				id: "2236614A1FEB12E7"
+				type: "item"
+				item: "tombstone:strange_tablet"
+			}]
+		}
+		{
+			title: "Scrolls"
+			x: -5.0d
+			y: 2.5d
+			subtitle: "Sprinkle Of Death"
+			description: ["Must be enchanted by using on a grave with a soul "]
+			dependencies: ["49AFAAEFA9B2DC5B"]
+			id: "1672BCF428F5DE2F"
+			tasks: [
+				{
+					id: "6BD079F23C52AF6F"
+					type: "item"
+					item: "tombstone:scroll_of_knowledge"
+				}
+				{
+					id: "669A379CBABBF2AB"
+					type: "item"
+					item: "tombstone:scroll_of_preservation"
+				}
+				{
+					id: "7A14B605B94CE2B6"
+					type: "item"
+					item: "tombstone:scroll_of_unstable_intangibleness"
+				}
+				{
+					id: "6A5C7101BB5A6456"
+					type: "item"
+					item: "tombstone:scroll_of_feather_fall"
+				}
+				{
+					id: "1D478454847BF7AF"
+					type: "item"
+					item: "tombstone:scroll_of_purification"
+				}
+				{
+					id: "698155D42505CFDA"
+					type: "item"
+					item: "tombstone:scroll_of_true_sight"
+				}
+				{
+					id: "727B03C8778A56C3"
+					type: "item"
+					item: "tombstone:scroll_of_reach"
+				}
+				{
+					id: "7D0E2B2D47E20483"
+					type: "item"
+					item: "tombstone:scroll_of_lightning_resistance"
+				}
+				{
+					id: "7E8F6CC260BB9183"
+					type: "item"
+					item: "tombstone:scroll_of_frost_resistance"
+				}
+				{
+					id: "643C29FC63696A92"
+					type: "item"
+					item: "tombstone:scroll_of_aquatic_life"
+				}
+			]
+		}
+		{
+			title: "Tablets"
+			x: 5.5d
+			y: 2.5d
+			subtitle: "Utility Tablet"
+			description: ["Each tablet must be enchanted with a graves soul to function each having their own and unique use"]
+			dependencies: ["791ADCC4B9CAE688"]
+			id: "6AC603278338FAF7"
+			tasks: [
+				{
+					id: "7029B996F1A4CC2A"
+					type: "item"
+					item: "tombstone:tablet_of_recall"
+				}
+				{
+					id: "492EC4E2DC6ED808"
+					type: "item"
+					item: "tombstone:tablet_of_home"
+				}
+				{
+					id: "072BCD0FA1E8E196"
+					type: "item"
+					item: "tombstone:tablet_of_cupidity"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			subtitle: "Fancy"
+			description: ["Thease upgraded forms can only be goten by fishing in the junk pool(in other words with bad luck) or finding them as loot"]
+			dependencies: ["40F4D7769612277F"]
+			id: "46A333D7C4064A2A"
+			tasks: [
+				{
+					id: "1C9A5B2F75EE30A2"
+					type: "item"
+					item: {
+						id: "tombstone:tablet_of_recall"
+						Count: 1b
+						tag: {
+							ancient: 1b
+						}
+					}
+				}
+				{
+					id: "2575D454E28E6A2D"
+					type: "item"
+					item: {
+						id: "tombstone:tablet_of_home"
+						Count: 1b
+						tag: {
+							ancient: 1b
+						}
+					}
+				}
+				{
+					id: "47F81402E32E8B15"
+					type: "item"
+					item: {
+						id: "tombstone:tablet_of_cupidity"
+						Count: 1b
+						tag: {
+							ancient: 1b
+						}
+					}
+				}
+				{
+					id: "6A965903418AD5F5"
+					type: "item"
+					item: "tombstone:lost_tablet"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			dependencies: ["2F6F74561220799E"]
+			id: "40F4D7769612277F"
+			tasks: [{
+				id: "1C81DE2C01D60711"
+				type: "item"
+				item: {
+					id: "tombstone:fishing_rod_of_misadventure"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 11.5d
+			subtitle: "Magical Modification"
+			description: ["Different magical books that can enchance or recycle your old equipment"]
+			dependencies: ["2F6F74561220799E"]
+			id: "26027637370C0114"
+			tasks: [
+				{
+					id: "4DEB567A17A8E934"
+					type: "item"
+					item: "tombstone:book_of_disenchantment"
+				}
+				{
+					id: "215C7D045BCDDA92"
+					type: "item"
+					item: "tombstone:book_of_recycling"
+				}
+				{
+					id: "06C298B7B9C1459A"
+					type: "item"
+					item: "tombstone:book_of_repairing"
+				}
+				{
+					id: "0CD7056AC7EC9096"
+					type: "item"
+					item: "tombstone:book_of_magic_impregnation"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			subtitle: "Soul Saving"
+			description: ["Ingredisants for a receptical"]
+			dependencies: ["2F6F74561220799E"]
+			id: "39EB9CB45833D384"
+			tasks: [
+				{
+					id: "5E56FAA7D83D8BEA"
+					type: "item"
+					item: "tombstone:bone_needle"
+				}
+				{
+					id: "062CC3CBEB84A8F0"
+					type: "item"
+					item: "tombstone:impregnated_diamond"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 3.5d
+			subtitle: "Oh no, Anyways"
+			description: ["If your pet dies this item can collect their soul so you can later revive it."]
+			dependencies: ["39EB9CB45833D384"]
+			id: "6E3B105F4A36A37D"
+			tasks: [{
+				id: "3A00B79DCE1D0475"
+				type: "item"
+				item: "tombstone:familiar_receptacle"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			subtitle: "Necromancer?"
+			description: [
+				"While in your inventory if you die instead this item will be used up"
+				""
+				"Alternativly you can use it to add a soul to a grave"
+				""
+				"Is a rare drop from powerfull undead entities"
+			]
+			dependencies: ["2F6F74561220799E"]
+			dependency_requirement: "one_completed"
+			id: "038AE34D149597E9"
+			tasks: [{
+				id: "7F6733D2FBB64F27"
+				type: "item"
+				item: "tombstone:soul_receptacle"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 11.5d
+			subtitle: "Quick get way"
+			description: ["When used help you make your excape"]
+			dependencies: ["2F6F74561220799E"]
+			id: "124066C7F1BC7AE7"
+			tasks: [
+				{
+					id: "61E1273B34373A15"
+					type: "item"
+					item: "tombstone:smoke_ball"
+				}
+				{
+					id: "762E94C5EE04BD48"
+					type: "item"
+					item: "tombstone:dust_of_vanishing"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			subtitle: "Selective totem"
+			description: ["When enchanted and in your inventory will protect you from certain death types"]
+			dependencies: ["2F6F74561220799E"]
+			id: "2F0F20584F020816"
+			tasks: [{
+				id: "117D1AED53345F71"
+				type: "item"
+				item: "tombstone:voodoo_poppet"
+			}]
+		}
+	]
+}

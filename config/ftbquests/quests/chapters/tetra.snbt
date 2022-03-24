@@ -1,0 +1,10 @@
+{
+	id: "43D56A2FA0648EC6"
+	group: ""
+	order_index: 20
+	filename: "tetra"
+	title: "Tetra"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

@@ -1,0 +1,23 @@
+{
+	id: "7460E51C7911AEAB"
+	order_index: 6
+	title: "Legendary_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:ash_gloves" }
+		{ item: "losttrinkets:ruby_heart" }
+		{ item: "losttrinkets:golden_horseshoe" }
+		{ item: "losttrinkets:golden_tooth" }
+		{ item: "losttrinkets:broken_heart_1" }
+		{ item: "losttrinkets:broken_heart_2" }
+		{ item: "losttrinkets:broken_heart_3" }
+		{ item: "losttrinkets:broken_heart_4" }
+		{ item: "losttrinkets:broken_heart_5" }
+		{ item: "losttrinkets:octopus_leg" }
+		{ item: "losttrinkets:magical_herbs" }
+		{ item: "losttrinkets:magical_feathers" }
+		{ item: "losttrinkets:mad_aura" }
+		{ item: "losttrinkets:broken_totem" }
+	]
+}

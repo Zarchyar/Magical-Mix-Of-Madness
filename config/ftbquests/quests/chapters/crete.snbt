@@ -1,0 +1,10 @@
+{
+	id: "03E7A7532F68F4AB"
+	group: ""
+	order_index: 9
+	filename: "crete"
+	title: "Create"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

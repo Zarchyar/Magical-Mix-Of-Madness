@@ -1,0 +1,18 @@
+{
+	id: "5C70BF0E800AD24B"
+	order_index: 5
+	title: "Epic_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:dark_egg", weight: 2 }
+		{ item: "losttrinkets:pillow_of_secrets", weight: 2 }
+		{ item: "losttrinkets:tha_spirit", weight: 2 }
+		{ item: "losttrinkets:mirror_shard", weight: 2 }
+		{ item: "losttrinkets:mossy_ring", weight: 2 }
+		{ item: "losttrinkets:mossy_belt", weight: 2 }
+		{ item: "losttrinkets:treasure_ring", weight: 2 }
+		{ item: "losttrinkets:silver_nail", weight: 2 }
+		{ item: "losttrinkets:glory_shards", weight: 2 }
+	]
+}

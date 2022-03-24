@@ -1,0 +1,100 @@
+{
+	id: "5B5ED516B1C2FD08"
+	group: ""
+	order_index: 23
+	filename: "random_challenges"
+	title: "Random Challenges"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Click Me"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "Random Challenges"
+			description: ["This is just a place I put a bunch of odd and end \"challenges\" for players to compleat."]
+			id: "7FB3CE8F90AF9AB4"
+			tasks: [{
+				id: "40D9ADE356B4B685"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			subtitle: "WHY?"
+			dependencies: ["7FB3CE8F90AF9AB4"]
+			hide: true
+			dependency_requirement: "one_started"
+			optional: true
+			id: "5996C8DCD346977A"
+			tasks: [{
+				id: "40D1C9357E7184AA"
+				type: "stat"
+				icon: "create:peculiar_bell"
+				stat: "minecraft:bell_ring"
+				value: 25000
+			}]
+			rewards: [{
+				id: "28F2E3D73175E8EE"
+				type: "random"
+				table_id: 5742426357617813457L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "They Love you!"
+			dependencies: ["7FB3CE8F90AF9AB4"]
+			hide: true
+			dependency_requirement: "one_started"
+			optional: true
+			id: "4F1132937E8DFE26"
+			tasks: [{
+				id: "198F66841560FE1F"
+				type: "stat"
+				icon: "botania:tiny_potato"
+				stat: "botania:tiny_potatoes_petted"
+				value: 25000
+			}]
+			rewards: [{
+				id: "666CE6C801F9F326"
+				type: "random"
+				table_id: 5742426357617813457L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			shape: "circle"
+			subtitle: "Wonderfull Ride Right?"
+			dependencies: ["7FB3CE8F90AF9AB4"]
+			hide: true
+			optional: true
+			id: "71D7B231376DD214"
+			tasks: [{
+				id: "53A72143FFFA6EC5"
+				type: "stat"
+				icon: "losttrinkets:piggy"
+				stat: "minecraft:pig_one_cm"
+				value: 250000
+			}]
+			rewards: [
+				{
+					id: "774C7FC62FAB9305"
+					type: "random"
+					table_id: 5742426357617813457L
+				}
+				{
+					id: "2884013C6F95DA92"
+					type: "command"
+					title: "Summon The Speed Demon"
+					icon: "minecraft:pig_spawn_egg"
+					command: "/summon minecraft:pig ~ ~ ~ {Saddle:1,CustomName:'[{\"text\":\"Speed Demon\",\"bold\":true,\"color\":\"dark_red\"}]',CustomNameVisible:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,PersistenceRequired:1b,Attributes:[{Name:\"generic.movement_speed\",Base:10f}]}"
+					player_command: true
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,2263 @@
+{
+	id: "4D017CA4FF9DB75A"
+	group: ""
+	order_index: 16
+	filename: "mana_and_artifice"
+	title: "Mana and Artifice"
+	icon: "mana-and-artifice:guide_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 0.5d
+			subtitle: "A Strangly Magical Ore"
+			id: "783D8AEBDF28AEE5"
+			tasks: [{
+				id: "4DECB8840E10A035"
+				type: "item"
+				item: "mana-and-artifice:vinteum_ore"
+			}]
+		}
+		{
+			title: "Vinteum"
+			x: 1.5d
+			y: 0.5d
+			subtitle: "Beginings Of Magic"
+			description: ["Create a Vinteum Ingot"]
+			dependencies: ["783D8AEBDF28AEE5"]
+			id: "003F36D025A66F63"
+			tasks: [
+				{
+					id: "5AB35D5A9B5ED693"
+					type: "item"
+					item: "mana-and-artifice:vinteum_dust"
+				}
+				{
+					id: "77376B9B853A5425"
+					type: "item"
+					item: "mana-and-artifice:vinteum_coated_iron"
+				}
+				{
+					id: "736891D92EE59801"
+					type: "item"
+					item: "mana-and-artifice:vinteum_ingot"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			subtitle: "What a great read"
+			description: [
+				"Aquire The Codex either as loot from a structure or by trading with a Spellmonger (villager professtion with the professtion block of a Runeforge)"
+				""
+				"Once aquired you can read it to begin Mana and Artifice"
+			]
+			id: "26BD60B27E113D28"
+			tasks: [{
+				id: "063E8C7A1333E5AE"
+				type: "item"
+				item: "mana-and-artifice:guide_book"
+			}]
+		}
+		{
+			title: "Magical Plants"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Collect them all"
+			id: "701B295AA17A7143"
+			tasks: [
+				{
+					id: "0A8B27D6EF3FD5BA"
+					type: "item"
+					item: "mana-and-artifice:aum"
+				}
+				{
+					id: "625CDC2040D8E966"
+					type: "item"
+					item: "mana-and-artifice:wakebloom"
+				}
+				{
+					id: "67EC05B3C1754CB5"
+					type: "item"
+					item: "mana-and-artifice:desert_nova"
+				}
+				{
+					id: "692AC0FBC03A1761"
+					type: "item"
+					item: "mana-and-artifice:cerublossom"
+				}
+				{
+					id: "22A9F3FEE1839211"
+					type: "item"
+					item: "mana-and-artifice:tarma_root"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			subtitle: "Its watching you"
+			description: ["This block informs you of the task you must next perform to advance as a practitioner of the magic arts."]
+			dependencies: ["26BD60B27E113D28"]
+			id: "4D20647E42AF57C2"
+			tasks: [{
+				id: "680535186B0AF4D4"
+				type: "item"
+				item: "mana-and-artifice:occulus"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			subtitle: "Starting to learn"
+			description: ["Make sure to check the occulus for what needs to be done to unlock the next tier"]
+			dependencies: ["4D20647E42AF57C2"]
+			id: "24F57DA637535D10"
+			tasks: [{
+				id: "6831385EBF277D85"
+				type: "checkmark"
+				title: "Tier 1"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"Used to craft a variety of items"
+				""
+				"As you craft with this it will request you draw varius manaweaving symbols"
+			]
+			dependencies: ["24F57DA637535D10"]
+			id: "4AA6F10CFCA2C73F"
+			tasks: [
+				{
+					id: "02CAB2DDB9CB4A89"
+					type: "item"
+					item: "mana-and-artifice:manaweaving_altar"
+				}
+				{
+					id: "5E47173003420C04"
+					type: "item"
+					title: "Any #questtag:manaweaver_wand"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "questtag:manaweaver_wand"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Casting Wand or Staff"
+			x: 12.0d
+			y: -1.5d
+			subtitle: "Magical pokey stick"
+			description: ["A melee weapon that can have a spell attatched to it."]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "71FF2AD7195FF1CE"
+			tasks: [{
+				id: "154928EDC5856239"
+				type: "item"
+				title: "Any #questtag:casting_staff_wand"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "questtag:casting_staff_wand"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			description: ["This staff increases your overall mobility when held in the offhand"]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "20D5DC7017597360"
+			tasks: [{
+				id: "74800FC7812517EE"
+				type: "item"
+				item: "mana-and-artifice:pilgrim_staff"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			subtitle: "Xp Storage"
+			description: ["This devise can store experaince from a player for latter use"]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "1B9A4514F29F8AA1"
+			tasks: [{
+				id: "4D6043EC72986B46"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:crystal_of_memories"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.5d
+			description: ["Single use item that returns you to your bed"]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "4B8E1B758158334B"
+			tasks: [{
+				id: "744327631B40225B"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:bed_charm"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: -3.0d
+			description: ["Will protect you from the next leathal case of fall damge you experiance then break"]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "3B7208024F2D9E40"
+			tasks: [{
+				id: "3602424548C20A94"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:fall_charm"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			description: ["Used to create spell recipies youll then have to use a ritual to turn the recipe into a spell"]
+			dependencies: ["24F57DA637535D10"]
+			id: "3A5FE9247CDB270F"
+			tasks: [{
+				id: "457008F0B301FEDA"
+				type: "item"
+				item: "mana-and-artifice:inscription_table"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 4.0d
+			description: ["A crafting ingrediant"]
+			dependencies: ["5EF95FD90D090B9B"]
+			id: "49EB9F402FB89645"
+			tasks: [{
+				id: "535A53CE0AC8B302"
+				type: "item"
+				item: "mana-and-artifice:ritual_focus_minor"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			subtitle: "Washed Leather"
+			description: ["Right click on water while holding leather to make it"]
+			dependencies: ["3A5FE9247CDB270F"]
+			id: "4D531C6B60A3BC7A"
+			tasks: [{
+				id: "0F28EFA5C8BD27E2"
+				type: "item"
+				item: "mana-and-artifice:vellum"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.5d
+			subtitle: "Magic furnace"
+			description: [
+				"Can be used to smelt down a variety of items for free"
+				""
+				"Additionally it is needed to create several items of interest to a practitioner of magic "
+				""
+				"This can be eventially upgraded with multiple items to augment and improve its effect"
+			]
+			dependencies: ["24F57DA637535D10"]
+			id: "19D633ED841D3217"
+			tasks: [{
+				id: "39CEF3BA5EB02DB5"
+				type: "item"
+				item: "mana-and-artifice:runeforge"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 2.5d
+			description: ["Can be used for healing make sure your in a safe spot where you can stand still for a bit"]
+			dependencies: ["24F57DA637535D10"]
+			id: "6FDA65792A6DC7E7"
+			tasks: [{
+				id: "3DA78995DBD7AD85"
+				type: "item"
+				item: "mana-and-artifice:healing_poultice"
+			}]
+		}
+		{
+			title: "Ritual Making"
+			x: 12.5d
+			y: 2.0d
+			description: ["The main items youll need to cast rituals"]
+			dependencies: ["24F57DA637535D10"]
+			id: "5EF95FD90D090B9B"
+			tasks: [
+				{
+					id: "570AE4466FF322FD"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:wizard_chalk"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "46135338FE689C0B"
+					type: "item"
+					item: "mana-and-artifice:purified_vinteum_dust"
+				}
+				{
+					id: "7EAF6A86C34C3C70"
+					type: "item"
+					title: "Any #questtag:manaweaver_wand"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "questtag:manaweaver_wand"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: 3.5d
+			subtitle: "Shape the world"
+			description: ["Used in a Varity of Rituals to shape the terain"]
+			dependencies: ["5EF95FD90D090B9B"]
+			id: "733946CA55D6B641"
+			tasks: [{
+				id: "3D2DB5839366A466"
+				type: "item"
+				item: "mana-and-artifice:flat_lands_book"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 2.5d
+			description: ["Can save a ritual to make it easyer to set back up"]
+			dependencies: ["5EF95FD90D090B9B"]
+			id: "0599ED7D653F3F53"
+			tasks: [{
+				id: "12BD34D424EF733F"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:practitioners_pouch"
+					Count: 1b
+					tag: {
+						patches: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			description: ["Special ink for making spells"]
+			dependencies: ["3A5FE9247CDB270F"]
+			id: "45C9C10C8F807F87"
+			tasks: [{
+				id: "11343A70576A2517"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:arcanist_ink"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			description: ["Crafting ingrediant used in spell making"]
+			dependencies: ["3A5FE9247CDB270F"]
+			id: "7268CF682391EA1F"
+			tasks: [{
+				id: "17D3D692241B597D"
+				type: "item"
+				item: "mana-and-artifice:arcane_ash"
+			}]
+		}
+		{
+			title: "Glyphs"
+			x: 2.5d
+			y: 1.0d
+			description: ["Ingrediants for a varity of rituals and other items"]
+			id: "72C861DB31865DFE"
+			tasks: [
+				{
+					id: "1D18C6288324E9B9"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_blank"
+				}
+				{
+					id: "761702F52113E441"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_black"
+				}
+				{
+					id: "05F70B762E54AE47"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_blue"
+				}
+				{
+					id: "48CC3B923D34C92B"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_brown"
+				}
+				{
+					id: "5EF3CE046CEE8B47"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_cyan"
+				}
+				{
+					id: "7CC5B553636F8FE9"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_gray"
+				}
+				{
+					id: "6604C486CCA68E04"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_green"
+				}
+				{
+					id: "4A81842A8E6B3550"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_light_blue"
+				}
+				{
+					id: "0535E0C843E801E4"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_light_gray"
+				}
+				{
+					id: "73411685213A25F6"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_lime"
+				}
+				{
+					id: "25D56A8D0A142502"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_magenta"
+				}
+				{
+					id: "4817E682B45E9240"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_orange"
+				}
+				{
+					id: "1F190E7E7B4311FA"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_pink"
+				}
+				{
+					id: "6CB6D1D63D2D44F8"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_purple"
+				}
+				{
+					id: "7F515486BFA3D869"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_red"
+				}
+				{
+					id: "0ACB390901E80879"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_white"
+				}
+				{
+					id: "64A116D87AF1CF87"
+					type: "item"
+					item: "mana-and-artifice:stone_rune_yellow"
+				}
+			]
+		}
+		{
+			title: "Your first spell recipe"
+			x: 4.5d
+			y: 4.5d
+			subtitle: "A start"
+			description: ["Now perform the ritual of Arcana to turn it into a spell"]
+			dependencies: ["4D531C6B60A3BC7A"]
+			id: "56BF933F448BBB5B"
+			tasks: [{
+				id: "22D42B452909081B"
+				type: "item"
+				title: "Any #questtag:spellrecipe"
+				icon: {
+					id: "mana-and-artifice:enchanted_vellum"
+					Count: 1b
+					tag: {
+						spell: { }
+					}
+				}
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "questtag:spellrecipe"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			description: ["Can hold multiple spells for ease of carying"]
+			dependencies: ["3A5FE9247CDB270F"]
+			id: "0457E53F32209DDE"
+			tasks: [{
+				id: "35A8CF2A6C4103EE"
+				type: "item"
+				item: "mana-and-artifice:spell_book"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 0.5d
+			subtitle: "A little more advanced"
+			description: ["Make sure to read the codex as it has more detail on the items"]
+			dependencies: ["24F57DA637535D10"]
+			id: "594B36CED086114A"
+			tasks: [{
+				id: "2128B4F5857BF0CC"
+				type: "checkmark"
+				title: "Tier 2"
+			}]
+		}
+		{
+			title: "Runesmith's Tools"
+			x: 19.5d
+			y: -1.5d
+			subtitle: "Tools of the trade"
+			description: ["These tools are used in the process of rune smithing"]
+			dependencies: ["594B36CED086114A"]
+			id: "1E794414F1A6D425"
+			tasks: [
+				{
+					id: "5DBA22B2713F0AF0"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:runesmith_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2E3BBD094A4AE06B"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:runesmith_chisel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7F7AECED91F34563"
+					type: "item"
+					item: "mana-and-artifice:rune_clay_plate"
+				}
+				{
+					id: "15B67585547E8EA6"
+					type: "item"
+					item: "mana-and-artifice:rune_pattern"
+				}
+			]
+		}
+		{
+			x: 18.5d
+			y: -3.0d
+			subtitle: "Pattern Making"
+			description: ["Usinging a hammer and chisel you can carve shapes into rune patterns."]
+			dependencies: ["1E794414F1A6D425"]
+			dependency_requirement: "one_started"
+			id: "0B9FDD4282BDC056"
+			tasks: [{
+				id: "75C206CAA5B54066"
+				type: "item"
+				item: "mana-and-artifice:runescribing_table"
+			}]
+		}
+		{
+			x: 20.5d
+			y: -3.0d
+			subtitle: "Shape the metal"
+			description: [
+				"Can be used to form heated metals into varius shapes."
+				""
+				"Youll need a rune smiths hammer (or later on a construct) to hammer the metal into the pattern"
+				""
+				"Additionally this anvil is used to upgrade or repair some items"
+				""
+				"Make sure to check out the codex as this also unlocks runic enchanting "
+			]
+			dependencies: ["1E794414F1A6D425"]
+			dependency_requirement: "one_started"
+			id: "1B0CE57D251EBE12"
+			tasks: [{
+				id: "1A0D2AC8FF4C9394"
+				type: "item"
+				item: "mana-and-artifice:runic_anvil"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -7.0d
+			subtitle: "Magical Equipment"
+			description: ["The perfect armor for a mage read the codex entry for more info"]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "707FD3F948162FF9"
+			tasks: [
+				{
+					id: "2771C37DD54A62B5"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:mage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "623C50F0DB4F47D8"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:mage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7EB3C5F599323C03"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:mage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "28E582F4DC959CB5"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:mage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 20.5d
+			y: 4.5d
+			subtitle: "Magic generator"
+			description: ["Will help fill up your mana and the mana of items on nearby pedistals when placed"]
+			dependencies: ["4765FEABC58BDE67"]
+			dependency_requirement: "one_started"
+			id: "29D85BCD48708542"
+			tasks: [{
+				id: "44248D49AEFFE1D8"
+				type: "item"
+				item: "mana-and-artifice:mana_crystal"
+			}]
+		}
+		{
+			title: "Collect the Motes"
+			x: 19.5d
+			y: 3.0d
+			subtitle: "A speck of magic"
+			description: ["Crafting ingrediants that are created via varius rituals"]
+			dependencies: ["594B36CED086114A"]
+			id: "4765FEABC58BDE67"
+			tasks: [
+				{
+					id: "201FB63DE5677B8E"
+					type: "item"
+					item: "mana-and-artifice:mote_ender"
+				}
+				{
+					id: "6744B865BC104354"
+					type: "item"
+					item: "mana-and-artifice:mote_arcane"
+				}
+				{
+					id: "16C9675C934D83A9"
+					type: "item"
+					item: "mana-and-artifice:mote_water"
+				}
+				{
+					id: "0F1EC2AD064B54FA"
+					type: "item"
+					item: "mana-and-artifice:mote_fire"
+				}
+				{
+					id: "5A3085B88CE2A496"
+					type: "item"
+					item: "mana-and-artifice:mote_earth"
+				}
+				{
+					id: "3F01C567F82C7B5E"
+					type: "item"
+					item: "mana-and-artifice:mote_air"
+				}
+			]
+		}
+		{
+			x: 21.5d
+			y: 2.5d
+			subtitle: "We can improve it."
+			description: [
+				"Used with the ritual of alteration to add a modifier to a spell"
+				""
+				"Any given spell can only have up to 3 modifiers"
+			]
+			dependencies: ["594B36CED086114A"]
+			id: "7E4D598DA91C9839"
+			tasks: [{
+				id: "03B23FE4B582C804"
+				type: "item"
+				item: "mana-and-artifice:modifier_book"
+			}]
+		}
+		{
+			x: 21.0d
+			y: -6.5d
+			subtitle: "Magical memorization and reconstruction"
+			description: [
+				"As you cast spells you will memorize the components that make it up."
+				""
+				"Any component you have memorized (rote) can be used in this book to make new spells on the fly."
+			]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "3A8E42895DD0534E"
+			tasks: [{
+				id: "26C5B528A3C9351B"
+				type: "item"
+				item: "mana-and-artifice:book_of_rote"
+			}]
+		}
+		{
+			x: 16.5d
+			y: 4.0d
+			subtitle: "Shoo Mobs"
+			description: ["Prevents hostile mob spawning in a 32 block radius"]
+			dependencies: ["5E21DC7D29096C66"]
+			id: "340110F75E9351BE"
+			tasks: [{
+				id: "467B45F28E010C03"
+				type: "item"
+				item: "mana-and-artifice:warding_candle"
+			}]
+		}
+		{
+			x: 18.5d
+			y: 4.5d
+			subtitle: "Elevator?"
+			description: ["Can be used to make fancy elevators and paths read the codex for more info"]
+			dependencies: ["4765FEABC58BDE67"]
+			dependency_requirement: "one_started"
+			id: "2FA9B2E2108B2BCD"
+			tasks: [{
+				id: "3F3E38DCD6550CF6"
+				type: "item"
+				item: "mana-and-artifice:slipstream_generator"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -4.5d
+			subtitle: "Creeper be gone"
+			description: ["When a creeper goes to explode near you it'll get teliported somewhere..."]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "31C710EA8294E2EE"
+			tasks: [{
+				id: "66ADBDBC0BB02881"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:enderguard_amulet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 18.5d
+			y: 3.0d
+			subtitle: "Vacume hopper?"
+			description: ["When summoned on top a chest it will go around and sweep nearby items into the chest"]
+			dependencies: ["594B36CED086114A"]
+			id: "1EB3A832BE57D629"
+			tasks: [{
+				id: "422057F1E4A84E3B"
+				type: "item"
+				item: "mana-and-artifice:magic_broom"
+			}]
+		}
+		{
+			title: "Break Rings"
+			x: 17.0d
+			y: -5.5d
+			subtitle: "Increase the powa of your mineing spell"
+			description: ["Will raise the mineing level of your break spell allowing you to harvest harder blocks"]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "7D753F4C4A473B60"
+			tasks: [
+				{
+					id: "314259A43384B239"
+					type: "item"
+					item: "mana-and-artifice:break_ring_lesser"
+				}
+				{
+					id: "71CF14EDF59D7E53"
+					type: "item"
+					item: "mana-and-artifice:break_ring_greater"
+				}
+			]
+		}
+		{
+			title: "Ring of Fortune and Silk touch"
+			x: 18.0d
+			y: -6.5d
+			subtitle: "Augment the break spell"
+			description: [
+				"The ring of silk touch makes break spells cast while its equiped and charged act like it has silk touch"
+				""
+				"The ring of minor fortune makes breaks spells act like they have fortune 1 while equiped and charged"
+			]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "3BBAABB8EB7D0733"
+			tasks: [
+				{
+					id: "02FB8CC84AD3ACFA"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:fortune_ring_minor"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3C235DA8655F870F"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:silk_touch_ring"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: -5.5d
+			subtitle: "Mine all mine"
+			description: ["Makes your aura enchants only affect you but also reduces their mana cost"]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "73A391AA7FBFD764"
+			tasks: [{
+				id: "19F209BB48E619C6"
+				type: "item"
+				item: "mana-and-artifice:selfish_belt"
+			}]
+		}
+		{
+			x: 22.5d
+			y: -4.5d
+			subtitle: "Stop messing with my stats"
+			description: [
+				"Prevents spell casting from changing your affinity"
+				""
+				"This means say you primarily use air spells suddenly needing to case a few earth spells wont cause your air spell to cost more(thou those earth spell will still cost you more due to your affinity)"
+			]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "35A2116E3DB71368"
+			tasks: [{
+				id: "5E98904E304502DB"
+				type: "item"
+				item: "mana-and-artifice:affinity_lock_belt"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -7.0d
+			subtitle: "Sewing? On an anvil?"
+			description: ["Used to upgrade and repair varius items"]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "67772BF9766F07B6"
+			tasks: [{
+				id: "5ABCCE58A8D91551"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:sorcerous_sewing_set"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: -0.5d
+			subtitle: "Fancy"
+			description: [
+				"Slightly fancyer crafting table"
+				""
+				"Items stay inside the table when closed and this can rember previus recipes for quick crafting"
+			]
+			dependencies: ["24F57DA637535D10"]
+			id: "102EC03E46BAD3F8"
+			tasks: [{
+				id: "21728AF1C64BA4B2"
+				type: "item"
+				item: "mana-and-artifice:magicians_workbench"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 3.0d
+			subtitle: "Mana battery"
+			description: ["Can be used to store additional mana for later use"]
+			dependencies: ["594B36CED086114A"]
+			id: "0B3972DCD9F4DFFE"
+			tasks: [{
+				id: "66A5903FCCF197C3"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:mana_crystal_fragment"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 2.5d
+			description: ["Slightly stronger crafting ingredient"]
+			dependencies: ["594B36CED086114A"]
+			id: "5E21DC7D29096C66"
+			tasks: [{
+				id: "0D108D9037401B36"
+				type: "item"
+				item: "mana-and-artifice:ritual_focus_lesser"
+			}]
+		}
+		{
+			title: "Practitioner's Pouch Patches"
+			x: 19.5d
+			y: -8.5d
+			subtitle: "Upgrade Time"
+			description: ["The patches can be sewn onto a practitioner's pouch to improve several aspects of it depending on the patch"]
+			dependencies: ["67772BF9766F07B6"]
+			id: "183C8953E077F65D"
+			tasks: [
+				{
+					id: "64610471C921D736"
+					type: "item"
+					item: "mana-and-artifice:patch_depth"
+				}
+				{
+					id: "3AD9288E09613309"
+					type: "item"
+					item: "mana-and-artifice:patch_speed"
+				}
+				{
+					id: "2AD81C35E8C0E8FF"
+					type: "item"
+					item: "mana-and-artifice:patch_glyph"
+				}
+				{
+					id: "6D36D5CB194E68D6"
+					type: "item"
+					item: "mana-and-artifice:patch_mote"
+				}
+				{
+					id: "51B9E8A52345A600"
+					type: "item"
+					item: "mana-and-artifice:patch_collection"
+				}
+			]
+		}
+		{
+			x: 21.5d
+			y: -2.0d
+			subtitle: "Tiny Helpers"
+			description: [
+				"Read the codex for more info on constructs"
+				""
+				"Constructs are a means to automate many operations for you."
+			]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "39F57FE95002CBE8"
+			tasks: [
+				{
+					id: "307CC9B5A4183698"
+					type: "item"
+					item: "mana-and-artifice:construct_workbench"
+				}
+				{
+					id: "00936418B0BF47D8"
+					type: "item"
+					item: "mana-and-artifice:construct_control_rod"
+				}
+				{
+					id: "56D2359BA2E3C291"
+					type: "item"
+					title: "Any #mana-and-artifice:chimerite_crystals"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mana-and-artifice:chimerite_crystals"
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Runeforge Upgrades: Chimerite Crystals"
+			x: 18.0d
+			y: -1.0d
+			subtitle: "Runforge Upgrade"
+			description: [
+				"Using 2 pedistals and 2 chimerite crystals you can augment the function of the runeforge"
+				""
+				"The color of the crystals affect how they modify the rune forge read the codex for more info"
+			]
+			dependencies: ["594B36CED086114A"]
+			id: "26BAC5A110ED1D75"
+			tasks: [
+				{
+					id: "1CAB408C54DA7CCC"
+					type: "item"
+					item: "mana-and-artifice:pedestal"
+					count: 2L
+				}
+				{
+					id: "1F315019F18AAFD2"
+					type: "item"
+					title: "Any #mana-and-artifice:chimerite_crystals"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mana-and-artifice:chimerite_crystals"
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 27.5d
+			y: 0.5d
+			subtitle: "A Choice"
+			description: ["In order to fully unlock this teir you must compleat a ritual the selects a faction once your faction is chosen it cannot be changed without commands"]
+			dependencies: ["594B36CED086114A"]
+			id: "54260F963D594DDE"
+			tasks: [{
+				id: "3B8D7EE1ED5EB86A"
+				type: "checkmark"
+				title: "Tier 3"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 2.0d
+			subtitle: "Bad Wither"
+			description: ["Grants some level of protection agoinst the wither effect"]
+			dependencies: ["54260F963D594DDE"]
+			id: "2E03285076E83F7F"
+			tasks: [{
+				id: "5BAB0C09368522D9"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:witherguard_amulet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 24.5d
+			y: 3.0d
+			subtitle: "Extra Mobile"
+			description: ["Alows you to cast 1 more mobility spell while in the air"]
+			dependencies: ["54260F963D594DDE"]
+			id: "3ED397346606140F"
+			tasks: [{
+				id: "4684DF553027D12B"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:air_cast_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 28.5d
+			y: 4.5d
+			description: ["Enhanaces the blink spell"]
+			dependencies: ["54260F963D594DDE"]
+			id: "2E122D5EFC6AA982"
+			tasks: [{
+				id: "58A3CC83D459843A"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:blink_precision_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 29.5d
+			y: 4.0d
+			subtitle: "Turret"
+			description: ["Uses Vintium Dust as fuel to fire magical bolts at mobs"]
+			dependencies: ["54260F963D594DDE"]
+			id: "211F897842ED048F"
+			tasks: [{
+				id: "7C51752E6F2DBAB2"
+				type: "item"
+				item: "mana-and-artifice:arcane_sentry"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -1.5d
+			subtitle: "Shiny"
+			description: ["When chanrged and worn will make your break spells act like they have fortune 2"]
+			dependencies: ["54260F963D594DDE"]
+			id: "0166EDD49077631C"
+			tasks: [{
+				id: "613B80CDA7BB8756"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:fortune_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 29.0d
+			y: -2.5d
+			subtitle: "Poison no more"
+			description: ["As long as it has mana it will cure the effects of any poison you get"]
+			dependencies: ["54260F963D594DDE"]
+			id: "0391D1404FB55DC7"
+			tasks: [{
+				id: "272CB06041911B2E"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:antidote_bracelet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 25.0d
+			y: -1.5d
+			subtitle: "Mana Caffeine"
+			description: ["Grants a tempory boost to mana regen but after it wears out youll get a short reduction in mana regeneration"]
+			dependencies: ["54260F963D594DDE"]
+			id: "5CAC6DB31ECB4284"
+			tasks: [{
+				id: "15A30EB6D6E55913"
+				type: "item"
+				item: "mana-and-artifice:mana_coffee"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -2.5d
+			subtitle: "Bigger Mana Battery"
+			description: ["An upgraded form of the Mana Crystal Fragment"]
+			dependencies: ["54260F963D594DDE"]
+			id: "040F1BF6BC9A8C17"
+			tasks: [{
+				id: "41A13255C076D304"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:minor_mana_gem"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 27.5d
+			y: 4.5d
+			description: ["An upgrade to the Magic Broom"]
+			dependencies: ["54260F963D594DDE"]
+			id: "6187153EA45CA127"
+			tasks: [{
+				id: "1C841CF746D5B88C"
+				type: "item"
+				item: "mana-and-artifice:vortex_broom"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 4.0d
+			subtitle: "Magic Defender"
+			description: ["When used summons an orb that will attack nearby mobs"]
+			dependencies: ["54260F963D594DDE"]
+			id: "54D5B965DEB5F8F6"
+			tasks: [{
+				id: "0ED249C9BC3522A6"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:eldritch_orb"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 30.5d
+			y: 3.0d
+			subtitle: "Soul Gathering"
+			description: ["Used to store the souls of a mob used by the summoning spell"]
+			dependencies: ["54260F963D594DDE"]
+			id: "144D4A606428A980"
+			tasks: [{
+				id: "7CA7224B945AC742"
+				type: "item"
+				item: "mana-and-artifice:crystal_phylactery"
+			}]
+		}
+		{
+			x: 31.0d
+			y: 2.0d
+			subtitle: "Better Boat"
+			description: ["Work like a boat but will rapidly float to the surface even after being submerged"]
+			dependencies: ["54260F963D594DDE"]
+			id: "745BC1D41205515E"
+			tasks: [{
+				id: "3E0FD537294C846C"
+				type: "item"
+				item: "mana-and-artifice:bubble_boat"
+			}]
+		}
+		{
+			x: 26.5d
+			y: 4.5d
+			subtitle: "Bound To your Soul"
+			description: ["Summoned with a Cantrip even if you loose it you can resummon it and it will still hold all spells that where in it"]
+			dependencies: ["54260F963D594DDE"]
+			id: "1A7922304BBAA066"
+			tasks: [{
+				id: "53DFE2ABAC2111BE"
+				type: "item"
+				item: "mana-and-artifice:grimoire"
+			}]
+		}
+		{
+			title: "The Faerie Courts"
+			x: 26.0d
+			y: -5.0d
+			subtitle: "Pranks"
+			description: ["When sneaking you will turn invisible and have abnormaly powerfull punches"]
+			dependencies: ["5BC02F7E8AF858A0"]
+			optional: true
+			id: "49F24DC0650456C7"
+			tasks: [{
+				id: "2C3B74E8CAF0AA5D"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:trickery_bracelet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Ancient Council of Wizards"
+			x: 29.0d
+			y: -5.0d
+			subtitle: "Eldren Power"
+			description: [
+				"The ungent lets you see normaly unseeable things and shows you the location of all nearby mobs"
+				""
+				"The bracelet will absorb energy from elderin wellsprings to grant you extra mana when needed"
+			]
+			dependencies: ["5BC02F7E8AF858A0"]
+			optional: true
+			id: "2278BB943BD19332"
+			tasks: [
+				{
+					id: "3170DDD83787F92D"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:eldrin_sight_unguent"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6981B38AB30CDE22"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:eldrin_bracelet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Deamons of the Nether"
+			x: 28.0d
+			y: -5.5d
+			subtitle: "Lava Bath"
+			description: ["Grants Imunity to fire and lava"]
+			dependencies: ["5BC02F7E8AF858A0"]
+			optional: true
+			id: "34298E24AA33E525"
+			tasks: [{
+				id: "778A81DDA58955A1"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:emberglow_bracelet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Undead"
+			x: 27.0d
+			y: -5.5d
+			subtitle: "Sleep away the day"
+			description: ["Lets you skip the day an restores some souls"]
+			dependencies: ["5BC02F7E8AF858A0"]
+			optional: true
+			id: "43C14DD2154B039D"
+			tasks: [{
+				id: "4DC05FCD8002FBAF"
+				type: "item"
+				item: "mana-and-artifice:coffin"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -2.5d
+			description: [
+				"Certain items are specific to different factions "
+				"The Ritual of the Iron Bell can allow you to aquire the items of the other factions."
+			]
+			dependencies: ["54260F963D594DDE"]
+			id: "5BC02F7E8AF858A0"
+			tasks: [{
+				id: "6CF5269308432347"
+				type: "checkmark"
+				title: "Faction Items"
+			}]
+		}
+		{
+			x: 23.0d
+			y: -3.5d
+			subtitle: "No more dropping diamond in lava"
+			description: ["Causes break spells to put mined items into your inventory"]
+			dependencies: ["1B0CE57D251EBE12"]
+			id: "30672050F2C6FAF7"
+			tasks: [{
+				id: "025FE21582DFB9C4"
+				type: "item"
+				item: "mana-and-artifice:collector_ring_lesser"
+			}]
+		}
+		{
+			title: "More Patches"
+			x: 24.5d
+			y: -0.5d
+			description: ["Additional patches that you should now have acces to"]
+			dependencies: ["54260F963D594DDE"]
+			id: "0CC14C105DBF61E9"
+			tasks: [
+				{
+					id: "2A7315B9ACA8E8AB"
+					type: "item"
+					item: "mana-and-artifice:patch_void"
+				}
+				{
+					id: "7E0F576790268C68"
+					type: "item"
+					item: "mana-and-artifice:patch_weave"
+				}
+				{
+					id: "48328C4EDFF122A3"
+					type: "item"
+					item: "mana-and-artifice:patch_speed_2"
+				}
+			]
+		}
+		{
+			x: 30.5d
+			y: -0.5d
+			subtitle: "Advanced Spellcrafting"
+			description: ["Used for more advanced spell and ritual creation"]
+			dependencies: ["54260F963D594DDE"]
+			id: "4F79B676F59E34C5"
+			tasks: [{
+				id: "1F3E1ADCA01D40AB"
+				type: "item"
+				item: "mana-and-artifice:ritual_focus_greater"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 0.5d
+			subtitle: "Growing Power"
+			description: ["Now you have gained enought knoldge and power to harness the wellsprings of magic that generate around the world"]
+			dependencies: ["54260F963D594DDE"]
+			id: "634DE1D0B19A8C83"
+			tasks: [{
+				id: "3BB828CF4F451FB0"
+				type: "checkmark"
+				title: "Tier 4"
+			}]
+		}
+		{
+			title: "Wellspring Prism"
+			x: 33.0d
+			y: -2.5d
+			subtitle: "Chaneling Greater Power"
+			description: ["Needed to harvest the wellspring energy for use with the eldrin alter"]
+			dependencies: ["347CEB4C366D5690"]
+			dependency_requirement: "one_started"
+			id: "56944FA3E7034F44"
+			tasks: [
+				{
+					id: "131029B0150534B6"
+					type: "item"
+					item: "mana-and-artifice:decoration/chimerite_arcane_stone_straight"
+					count: 4L
+				}
+				{
+					id: "1A5BA825EEA702BF"
+					type: "item"
+					item: "mana-and-artifice:decoration/chimerite_arcane_stone_pillar"
+					count: 4L
+				}
+				{
+					id: "5D9EC05771707B38"
+					type: "item"
+					item: "mana-and-artifice:decoration/arcane_stone_stairs"
+					count: 8L
+				}
+				{
+					id: "531C113C239292CF"
+					type: "item"
+					item: "minecraft:chain"
+					count: 12L
+				}
+				{
+					id: "3B92DC8560B2C285"
+					type: "item"
+					item: "mana-and-artifice:decoration/arcane_stone_slab"
+					count: 4L
+				}
+				{
+					id: "48D78B9F02FB0262"
+					type: "item"
+					item: "mana-and-artifice:wellspring_pillar"
+					count: 4L
+				}
+				{
+					id: "7F4DF194CC768A36"
+					type: "item"
+					item: "mana-and-artifice:decoration/chimerite_arcane_stone_chiseled"
+				}
+				{
+					id: "16DCD181FAB33195"
+					type: "item"
+					item: "mana-and-artifice:decoration/chimerite_arcane_stone_corner"
+					count: 4L
+				}
+				{
+					id: "2A3AB9D42736CB23"
+					type: "item"
+					title: "Any #questtag:eldrinlens"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "questtag:eldrinlens"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Eldrin Alter"
+			x: 35.0d
+			y: -2.5d
+			subtitle: "Creating With Stronger Magics"
+			description: [
+				"Used to craft more powerful items"
+				""
+				"Th conduits needed depend on the craft and will need one or more wellspring prisms set up on the corisponding elements wellspring."
+			]
+			dependencies: ["347CEB4C366D5690"]
+			dependency_requirement: "one_started"
+			id: "3DBF40D60B135DEB"
+			tasks: [
+				{
+					id: "1E4E824A26FBF222"
+					type: "item"
+					title: "Any #questtag:eldrinconduit"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "questtag:eldrinconduit"
+						}
+					}
+				}
+				{
+					id: "020CAFA2E947E868"
+					type: "item"
+					item: "mana-and-artifice:eldrin_altar"
+				}
+				{
+					id: "08A46A9BC23A041B"
+					type: "item"
+					item: "mana-and-artifice:pedestal"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "Finding a Wellspring"
+			x: 34.0d
+			y: -1.0d
+			subtitle: "Finding the Unseeable"
+			description: [
+				"The divining rod when used will cause your player to face the nearest wellspring."
+				""
+				"Youll need one of the 2 uguents to actually see the wellspring"
+				""
+				"Wizards of the The Ancient Council of Wizards have acces to the spell Eldren Flight which will not only point you too a well spring but can even cary you to its location."
+			]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "347CEB4C366D5690"
+			tasks: [
+				{
+					id: "1C7B9275511911D5"
+					type: "item"
+					item: "mana-and-artifice:wellspring_dowsing_rod"
+				}
+				{
+					id: "3B38579BFE40BE3D"
+					type: "item"
+					title: "Any #questtag:wellspringseegoo"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "questtag:wellspringseegoo"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 35.5d
+			y: 2.5d
+			subtitle: "Fancy"
+			description: [
+				"A fancyer looking grimoire acts the same just looks cool"
+				"Summoned in a simular way to the original and shares the same inventory of spells"
+			]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "70957D65A716189F"
+			tasks: [{
+				id: "6B78E8CA76141573"
+				type: "item"
+				title: "Any #questtag:factiongrimoire"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "questtag:factiongrimoire"
+					}
+				}
+			}]
+		}
+		{
+			x: 34.5d
+			y: 3.5d
+			subtitle: "Multiclassing"
+			description: ["Will incrase your spell damage when a sword is held in the other hand"]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "4E9085E453C38FE8"
+			tasks: [{
+				id: "5FF2EC727202A64B"
+				type: "item"
+				item: "mana-and-artifice:battlemage_amulet"
+			}]
+		}
+		{
+			x: 34.5d
+			y: -6.0d
+			subtitle: "Burning Up"
+			description: [
+				"Crafting ingrediant and upgrade to the runeforge"
+				""
+				"When clicked onto a runefore it will upgrade it and casue it to prosses items faster"
+			]
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			id: "30C13E3552DC9548"
+			tasks: [{
+				id: "6A39161A096FD972"
+				type: "item"
+				item: "mana-and-artifice:brimstone_charm"
+			}]
+		}
+		{
+			x: 33.5d
+			y: 3.5d
+			subtitle: "Portable Hole"
+			description: ["When used will temporarily make the area of blocks in frount of you become walk thru."]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "5198CF531E4F5C8E"
+			tasks: [{
+				id: "5D0B2F01E9B37B31"
+				type: "item"
+				item: "mana-and-artifice:transitory_tunnel"
+			}]
+		}
+		{
+			x: 33.5d
+			y: -6.0d
+			subtitle: "Magical Protection"
+			description: ["Will grant a level of damage resistance towards magic damage"]
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			id: "41AC8217E22BF0E9"
+			tasks: [{
+				id: "2656351CE6B6E0A5"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:warding_amulet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 36.0d
+			y: -4.0d
+			subtitle: "Even Better Collection"
+			description: ["Will cause all break spell to attemt to put mined blocks into a container marked with a  rune of marking if it fails to do so will act like the lesser vertion of the ring"]
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			id: "183DCB081AA961D7"
+			tasks: [{
+				id: "6B2E623177C0E1F2"
+				type: "item"
+				item: "mana-and-artifice:collector_ring_greater"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -4.0d
+			subtitle: "Self Propultion"
+			description: ["Uses mana to boost you along otherwise acting like an elytra as long as you have mana"]
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			optional: true
+			id: "56E63C694B3768EB"
+			tasks: [{
+				id: "7CD5456855FCB8F2"
+				type: "item"
+				item: "mana-and-artifice:spectral_elytra"
+			}]
+		}
+		{
+			x: 32.5d
+			y: 2.5d
+			subtitle: "Soul Gathering"
+			description: ["Increases the number of souls you gather when killing things"]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "61E22C2137118DA1"
+			tasks: [{
+				id: "45BEA5B1D7BF9303"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:bone_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Manaweaving Automation"
+			x: 11.0d
+			y: -0.5d
+			subtitle: "Automation Tools"
+			description: ["Items you can use to automate manaweaving"]
+			dependencies: ["4AA6F10CFCA2C73F"]
+			id: "0CF1271C4225F5B8"
+			tasks: [
+				{
+					id: "59C51805132CEFCA"
+					type: "item"
+					item: "mana-and-artifice:manaweave_projector"
+				}
+				{
+					id: "74C2188709DCD4ED"
+					type: "item"
+					item: "mana-and-artifice:manaweaving_pattern_recipe_paper"
+				}
+				{
+					id: "1E665B260BED0599"
+					type: "item"
+					item: "mana-and-artifice:manaweave_bottle"
+				}
+			]
+		}
+		{
+			x: 32.5d
+			y: -5.5d
+			subtitle: "Fancy"
+			description: ["Will cause your break spells to act like you have fortune 3"]
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			id: "4455477204E2C3D5"
+			tasks: [{
+				id: "178FC7C821CD9842"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:fortune_ring_greater"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Greater Motes"
+			x: 34.0d
+			y: -4.0d
+			dependencies: [
+				"56944FA3E7034F44"
+				"3DBF40D60B135DEB"
+			]
+			id: "7E31F55051BED013"
+			tasks: [
+				{
+					id: "1451405727A782E5"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_air"
+				}
+				{
+					id: "1EAEA8FEFCFAC711"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_earth"
+				}
+				{
+					id: "66F217048701168F"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_fire"
+				}
+				{
+					id: "06BC8B72DCE68F66"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_water"
+				}
+				{
+					id: "4B2ABEA94DE37FC6"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_arcane"
+				}
+				{
+					id: "55D22003F1652884"
+					type: "item"
+					item: "mana-and-artifice:greater_mote_ender"
+				}
+			]
+		}
+		{
+			title: "Even more patches"
+			x: 35.5d
+			y: -5.5d
+			dependencies: ["7E31F55051BED013"]
+			dependency_requirement: "one_started"
+			id: "7C64147D4B42482A"
+			tasks: [
+				{
+					id: "65CFE573C31224CD"
+					type: "item"
+					item: "mana-and-artifice:patch_depth_2"
+				}
+				{
+					id: "2B2A22C7CD8F7674"
+					type: "item"
+					item: "mana-and-artifice:patch_rift"
+				}
+			]
+		}
+		{
+			x: 39.0d
+			y: 0.5d
+			subtitle: "As strong as it gets"
+			description: ["You are now able to create a set of faction specific armor and a horn to call members of your faction to aid you"]
+			dependencies: ["634DE1D0B19A8C83"]
+			id: "48C19226FDFCC597"
+			tasks: [{
+				id: "7B54CC8CAC1765A0"
+				type: "checkmark"
+				title: "Tier 5"
+			}]
+		}
+		{
+			x: 37.5d
+			y: -1.5d
+			subtitle: "The Power of Nature"
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "1D7E58E48996BF40"
+			tasks: [
+				{
+					id: "58500E8E67DA7591"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:fey_armor_head"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7AA08D81C127A145"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:fey_armor_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "15A46542A40172EC"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:fey_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "11319825251FD18F"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:fey_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 38.5d
+			y: -2.5d
+			subtitle: "Bring the Fire"
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "628A9AB7208C3F28"
+			tasks: [
+				{
+					id: "70B0A1DB75CEDEED"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:demon_armor_head"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5EAFB98634DE1631"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:demon_armor_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "44BE9AEDF4498E49"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:demon_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2009BC4EF47E6E19"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:demon_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 39.5d
+			y: -2.5d
+			subtitle: "Armor of the Undead"
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "4D870E7464319A5C"
+			tasks: [
+				{
+					id: "7AA60580AE9C1C2B"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:bone_armor_head"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "130841D2EF67E9A0"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:bone_armor_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "21E02ADC0022D412"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:bone_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0030BCA6509BA91B"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:bone_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 40.5d
+			y: -1.5d
+			subtitle: "Ultimate Spellcasting"
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "17FB6B1817C818B7"
+			tasks: [
+				{
+					id: "1A2EBAD960C8ABB8"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:council_armor_head"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0712B3E19C0F070C"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:council_armor_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "071CA7FC19A15591"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:council_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "099FAB7EAF084B5A"
+					type: "item"
+					item: {
+						id: "mana-and-artifice:council_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Faction Horn"
+			x: 37.5d
+			y: 2.5d
+			subtitle: "Call the Reinforcements"
+			description: ["When you use the horn of your faction will summon some mobs of your factions type to aid you."]
+			dependencies: ["48C19226FDFCC597"]
+			id: "00602A6AFE7CC1BF"
+			tasks: [{
+				id: "47EE7E5FAB5C1ECC"
+				type: "item"
+				title: "Any #questtag:factionhorn"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "questtag:factionhorn"
+					}
+				}
+			}]
+		}
+		{
+			x: 37.0d
+			y: -0.5d
+			subtitle: "Consume Them"
+			description: ["When you deal enougth damage this will refill some of your hunger and saturation"]
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "6C51D05C8B5AF3EC"
+			tasks: [{
+				id: "4BFDF5535D169B19"
+				type: "item"
+				item: "mana-and-artifice:cowl_of_consumption"
+			}]
+		}
+		{
+			x: 37.0d
+			y: 1.5d
+			subtitle: "Crown Of Power"
+			description: ["Overall enhances your magical capabilities additionaly it will periodicly clear negative effects"]
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "1DE5A292D9566C50"
+			tasks: [{
+				id: "41943E4F1030A265"
+				type: "item"
+				item: "mana-and-artifice:arcane_crown"
+			}]
+		}
+		{
+			x: 41.5d
+			y: -0.5d
+			subtitle: "Unleash the Fire"
+			description: ["This staff enhances the power of fire spells bound to it"]
+			dependencies: ["48C19226FDFCC597"]
+			optional: true
+			id: "028978F5E1878E4E"
+			tasks: [{
+				id: "2E53FF2DADADC14D"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:hellfire_staff"
+					Count: 1b
+					tag: {
+						Damage: 0
+						spell: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 38.5d
+			y: 3.5d
+			subtitle: "Portable Teliporter"
+			description: ["Can be used as a more portable vertion of the ritual of return"]
+			dependencies: ["48C19226FDFCC597"]
+			id: "4A5F458D15803F10"
+			tasks: [{
+				id: "196658282F8AA5B3"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:ender_disc"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 40.5d
+			y: 2.5d
+			subtitle: "Lava Boat"
+			description: ["Functions like the Bubble boat but can also function in lava"]
+			dependencies: ["48C19226FDFCC597"]
+			id: "3CF5A28A2C365835"
+			tasks: [{
+				id: "29FEEDECEF4749B6"
+				type: "item"
+				item: "mana-and-artifice:brimstone_boat"
+			}]
+		}
+		{
+			x: 39.5d
+			y: 3.5d
+			subtitle: "Biggest Mana Battery"
+			description: ["An upgrade of the minor mana gem"]
+			dependencies: ["48C19226FDFCC597"]
+			id: "5C2B6A33FA30246D"
+			tasks: [{
+				id: "17C7F45C3A2016E0"
+				type: "item"
+				item: {
+					id: "mana-and-artifice:major_mana_gem"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Final Patches"
+			x: 41.5d
+			y: 1.5d
+			dependencies: ["48C19226FDFCC597"]
+			id: "0612AEC7508D08AE"
+			tasks: [
+				{
+					id: "5B0A8DAA286DF925"
+					type: "item"
+					item: "mana-and-artifice:patch_speed_3"
+				}
+				{
+					id: "476A1010C26A1622"
+					type: "item"
+					item: "mana-and-artifice:patch_conveyance"
+				}
+			]
+		}
+		{
+			x: 42.0d
+			y: 0.5d
+			subtitle: "A \"Gift\" of the Gods"
+			description: ["Defeat The Allfather Odin to aquire this magical axe"]
+			dependencies: ["48C19226FDFCC597"]
+			id: "28F4581E2F7FB5DC"
+			tasks: [{
+				id: "5DBEF00B893C2C6D"
+				type: "item"
+				item: "mana-and-artifice:allfather_axe"
+			}]
+		}
+	]
+}

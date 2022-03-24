@@ -1,0 +1,16 @@
+{
+	id: "215D064688C2EB20"
+	order_index: 1
+	title: "Uncommon_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:rock_candy", weight: 32 }
+		{ item: "losttrinkets:lunch_bag", weight: 32 }
+		{ item: "losttrinkets:luck_coin", weight: 32 }
+		{ item: "losttrinkets:miners_pick", weight: 32 }
+		{ item: "losttrinkets:tha_cloud", weight: 32 }
+		{ item: "losttrinkets:turtle_shell", weight: 32 }
+		{ item: "losttrinkets:ice_shard", weight: 32 }
+	]
+}

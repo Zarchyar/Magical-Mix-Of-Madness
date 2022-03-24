@@ -1,0 +1,18 @@
+{
+	id: "40EC218130CBFEF3"
+	order_index: 4
+	title: "Elite_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:karma", weight: 4 }
+		{ item: "losttrinkets:dark_dagger", weight: 4 }
+		{ item: "losttrinkets:starfish", weight: 4 }
+		{ item: "losttrinkets:drop_spindle", weight: 4 }
+		{ item: "losttrinkets:ember", weight: 4 }
+		{ item: "losttrinkets:tea_leaf", weight: 4 }
+		{ item: "losttrinkets:coffee_bean", weight: 4 }
+		{ item: "losttrinkets:oxalis", weight: 4 }
+		{ item: "losttrinkets:golden_skull", weight: 4 }
+	]
+}

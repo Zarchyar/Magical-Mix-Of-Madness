@@ -1,0 +1,11 @@
+{
+	id: "74040688A24F34E6"
+	group: ""
+	order_index: 13
+	filename: "fey_wild"
+	title: "Fey Wild"
+	icon: "feywild:dwarven_anvil"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

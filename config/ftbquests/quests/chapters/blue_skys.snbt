@@ -1,0 +1,10 @@
+{
+	id: "305669C249F62C26"
+	group: ""
+	order_index: 5
+	filename: "blue_skys"
+	title: "Blue Skys"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

@@ -1,0 +1,27 @@
+{
+	id: "5604F0FFC85BA545"
+	group: ""
+	order_index: 7
+	filename: "buddy_cards"
+	title: "Buddy Cards"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Buddy Cards"
+		x: 0.0d
+		y: 0.0d
+		id: "31D24F6C8AAA7AEB"
+		tasks: [{
+			id: "3A90908F93F7732A"
+			type: "item"
+			title: "Any #buddycards:packs"
+			item: {
+				id: "itemfilters:tag"
+				Count: 1b
+				tag: {
+					value: "buddycards:packs"
+				}
+			}
+		}]
+	}]
+}

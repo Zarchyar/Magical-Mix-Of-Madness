@@ -1,0 +1,19 @@
+{
+	id: "103939E2C9773451"
+	order_index: 2
+	title: "Rare_Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:empty_amulet", weight: 16 }
+		{ item: "losttrinkets:tha_spider", weight: 16 }
+		{ item: "losttrinkets:glass_shard", weight: 16 }
+		{ item: "losttrinkets:blaze_heart", weight: 16 }
+		{ item: "losttrinkets:tha_ghost", weight: 16 }
+		{ item: "losttrinkets:treble_hooks", weight: 16 }
+		{ item: "losttrinkets:tha_wizard", weight: 16 }
+		{ item: "losttrinkets:tha_bat", weight: 16 }
+		{ item: "losttrinkets:blank_eyes", weight: 16 }
+		{ item: "losttrinkets:big_foot", weight: 16 }
+	]
+}

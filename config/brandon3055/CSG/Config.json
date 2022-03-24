@@ -1,0 +1,16 @@
+{
+  "inventory": {
+    "1:1": "{id:\"minecraft:leather_leggings\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;1804330814,-1278917674,-1533891613,-1344013753]}}",
+    "0:0": "{id:\"druidcraft:bone_axe\",Count:1b,tag:{Damage:0}}",
+    "0:9": "{id:\"supplementaries:sack\",Count:1b,tag:{BlockEntityTag:{Items:[{Slot:0b,id:\"farmersdelight:apple_cider\",Count:1b},{Slot:1b,id:\"farmersdelight:apple_cider\",Count:1b},{Slot:2b,id:\"farmersdelight:apple_cider\",Count:1b},{Slot:3b,id:\"farmersdelight:apple_cider\",Count:1b},{Slot:4b,id:\"abnormals_delight:cherry_cream_soda\",Count:5b},{Slot:5b,id:\"farmersdelight:apple_cider\",Count:1b},{Slot:6b,id:\"farmersdelight:fried_egg\",Count:1b},{Slot:7b,id:\"farmersdelight:cooked_rice\",Count:1b},{Slot:8b,id:\"farmersdelight:cooked_bacon\",Count:1b}]}}}",
+    "1:0": "{id:\"minecraft:leather_boots\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;1804330814,-1278917674,-1533891613,-1344013753]}}",
+    "0:8": "{id:\"ftbquests:book\",Count:1b}",
+    "1:2": "{id:\"minecraft:leather_chestplate\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;1804330814,-1278917674,-1533891613,-1344013753]}}",
+    "0:3": "{id:\"createaddition:honey_cake\",Count:1b}",
+    "0:4": "{id:\"create:builders_tea\",Count:1b}",
+    "0:2": "{id:\"wallets:wallet\",Count:1b,tag:{RepairCost:3,\"quark:RuneAttached\":1b,coin_value:1,Enchantments:[{lvl:1s,id:\"tombstone:soulbound\"},{lvl:1s,id:\"ensorcellation:curse_mercy\"}],\"quark:RuneColor\":{id:\"quark:black_rune\",Count:1b}}}",
+    "0:1": "{id:\"akashictome:tome\",Count:1b,tag:{\"akashictome:is_morphing\":1b,\"akashictome:data\":{storagenetwork:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"storagenetwork:network_book\"}},theoneprobe:{id:\"theoneprobe:probenote\",Count:1b},astralsorcery:{id:\"astralsorcery:tome\",Count:1b},ftbquests:{id:\"ftbquests:book\",Count:1b},psi:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"psi:encyclopaedia_psionica\"}},naturesaura:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"naturesaura:book\"}},eidolon:{id:\"eidolon:codex\",Count:1b},outvoted:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"outvoted:book\"}},occultism:{id:\"occultism:dictionary_of_spirits\",Count:1b},mahoutsukai:{id:\"mahoutsukai:guidebook\",Count:1b},elementalcraft:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"elementalcraft:element_book\"}},ars_nouveau:{id:\"ars_nouveau:worn_notebook\",Count:1b},bloodmagic:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"bloodmagic:guide\"}},supplementaries:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"supplementaries:supplementaries_guide\"}},buddycards:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"buddycards:buddycard_guidebook\"}}}}}",
+    "2:0": "{id:\"druidcraft:bone_shield\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;1804330814,-1278917674,-1533891613,-1344013753]}}"
+  },
+  "wipeBlacklist": []
+}

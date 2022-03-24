@@ -1,0 +1,14 @@
+{
+	id: "25F3D3B429928CBB"
+	order_index: 0
+	title: "Common Trinkets"
+	icon: "minecraft:chest"
+	loot_size: 1
+	rewards: [
+		{ item: "losttrinkets:piggy" }
+		{ item: "losttrinkets:horseshoe" }
+		{ item: "losttrinkets:butchers_cleaver" }
+		{ item: "losttrinkets:slingshot" }
+		{ item: "losttrinkets:magneto" }
+	]
+}

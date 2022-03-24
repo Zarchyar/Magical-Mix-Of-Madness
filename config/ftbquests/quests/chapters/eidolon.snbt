@@ -1,0 +1,10 @@
+{
+	id: "77BE508D9A6387FE"
+	group: ""
+	order_index: 11
+	filename: "eidolon"
+	title: "Eidolon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}
