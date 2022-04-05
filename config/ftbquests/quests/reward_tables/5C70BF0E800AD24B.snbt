@@ -15,4 +15,13 @@
 		{ item: "losttrinkets:silver_nail", weight: 2 }
 		{ item: "losttrinkets:glory_shards", weight: 2 }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "epic_trinkets"
+	}
 }

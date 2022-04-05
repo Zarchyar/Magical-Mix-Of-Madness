@@ -57,9 +57,9 @@
 		{
 			x: 0.0d
 			y: -1.5d
-			subtitle: "Why Do I Only Have 3 Hearts?"
+			subtitle: "Why Do I Only Have 3 HP?"
 			description: [
-				"In the start your healt will be lower than normal but dont worry there are a variety of ways to increase your hp."
+				"In the start your health will be lower than normal but dont worry there are a variety of ways to increase your hp."
 				" "
 				"One way is to collect xp and assign skill points, you will gain skill points as you get xp."
 				" "
@@ -71,23 +71,11 @@
 				type: "checkmark"
 				title: "Skills"
 			}]
-			rewards: [
-				{
-					id: "1688069A2128517B"
-					type: "item"
-					item: "minecraft:golden_carrot"
-				}
-				{
-					id: "175B66308621604D"
-					type: "item"
-					item: "minecraft:golden_apple"
-				}
-				{
-					id: "45DC65F4289305C0"
-					type: "item"
-					item: "quark:golden_frog_leg"
-				}
-			]
+			rewards: [{
+				id: "175B66308621604D"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
 		}
 		{
 			title: "I found Some Loot"
@@ -120,7 +108,7 @@
 		{
 			title: "Death Is Only The Begining"
 			x: -1.5d
-			y: 0.0d
+			y: 0.5d
 			subtitle: "So now what"
 			description: [
 				"This Pack uses Corail Tombstone as a gravestone mod but the mod can do alot more than just that."
@@ -359,6 +347,11 @@
 				id: "6651BEE500668AAF"
 				type: "item"
 				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+			}]
+			rewards: [{
+				id: "574ABC6AD761F138"
+				type: "loot"
+				table_id: 5742426357617813457L
 			}]
 		}
 		{
@@ -3110,6 +3103,66 @@
 					item: "storagedrawers:controller_slave"
 				}
 			]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			subtitle: "Punching Bag"
+			description: ["Can be used to test out your gears damage."]
+			dependencies: ["4CB971205B5AF2B7"]
+			id: "1E821F7E27F8FF63"
+			tasks: [{
+				id: "6DC272E2A577AB08"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -6.5d
+			subtitle: "Yep totaly safe no way this could end badly"
+			dependencies: ["2908E27200C50DD9"]
+			hide: true
+			id: "1B89A06F5F623B9F"
+			tasks: [{
+				id: "24749DD0C963158E"
+				type: "item"
+				item: "sons_of_sins:rotten_apple"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: [
+				"Some armor and equipment will grant bonuses when equiped"
+				""
+				"Different sets grant different bonuses."
+				""
+				"Certain sets give bonuses for partial sets in addition to full sets thease bonuses are cumulative."
+			]
+			id: "2203729D1AEF5C25"
+			tasks: [{
+				id: "7ECBF29DEF0AFFED"
+				type: "checkmark"
+				title: "Set Bonuses"
+			}]
+			rewards: [{
+				id: "6531D91DF126EA03"
+				type: "item"
+				item: {
+					id: "ceramics:clay_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+						AS_Amulet_Holder: [I;
+							1804330814
+							-1278917674
+							-1533891613
+							-1344013753
+						]
+					}
+				}
+			}]
 		}
 	]
 }

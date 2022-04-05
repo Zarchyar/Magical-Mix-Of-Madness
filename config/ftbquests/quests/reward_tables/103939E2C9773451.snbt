@@ -16,4 +16,13 @@
 		{ item: "losttrinkets:blank_eyes", weight: 16 }
 		{ item: "losttrinkets:big_foot", weight: 16 }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "rare_trinkets"
+	}
 }

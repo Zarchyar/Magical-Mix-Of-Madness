@@ -11,4 +11,13 @@
 		{ item: "losttrinkets:slingshot" }
 		{ item: "losttrinkets:magneto" }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "common_trinkets"
+	}
 }

@@ -277,7 +277,7 @@
 			}]
 		}
 		{
-			x: 9.5d
+			x: 9.0d
 			y: 2.5d
 			subtitle: "Magic furnace"
 			description: [
@@ -2257,6 +2257,44 @@
 				id: "5DBEF00B893C2C6D"
 				type: "item"
 				item: "mana-and-artifice:allfather_axe"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 3.0d
+			subtitle: "Magicly Carving Pumpkins Around Halloween can be interesting."
+			description: ["Just acts like a fancy book of rote"]
+			dependencies: ["24F57DA637535D10"]
+			id: "3F94EE64A5E82A5A"
+			tasks: [{
+				id: "5F753D49B81BF9A8"
+				type: "item"
+				item: "mana-and-artifice:pumpkin_staff"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Shiny"
+			hide: true
+			id: "22BD508EECB329F3"
+			tasks: [{
+				id: "20719DD2CF95E436"
+				type: "item"
+				item: "mana-and-artifice:mithions_magnificent_mbag"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Well Thats ... interesting"
+			description: ["Yep its literally a joke item"]
+			hide_text_until_complete: true
+			id: "52EAAA79D88030BE"
+			tasks: [{
+				id: "6C37106504DE9EBB"
+				type: "item"
+				item: "mana-and-artifice:wand_clone"
 			}]
 		}
 	]

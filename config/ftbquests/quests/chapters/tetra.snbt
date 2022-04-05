@@ -6,5 +6,365 @@
 	title: "Tetra"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["65DDB848537EC89D"]
+			dependency_requirement: "one_completed"
+			id: "0D539CDC4485ADD4"
+			tasks: [{
+				id: "1EB5F9581DEFC01E"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_2"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Right click on a crafting table to make a Workbench for modifieing tools."
+				""
+				"Tetra offers means to make a variety of custom tools keep in mind not all enchants work on these tools but they can still be realy good tools."
+			]
+			id: "65DDB848537EC89D"
+			tasks: [{
+				id: "0AFC3FBFE37C80D5"
+				type: "advancement"
+				advancement: "tetra:upgrades/root"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: [
+				"65DDB848537EC89D"
+				"0D539CDC4485ADD4"
+			]
+			dependency_requirement: "one_completed"
+			id: "72145B5453D2FFB5"
+			tasks: [{
+				id: "341F2C82BA6ABBE2"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_3"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: [
+				"65DDB848537EC89D"
+				"72145B5453D2FFB5"
+			]
+			dependency_requirement: "one_completed"
+			id: "19B6AFFCE6FD7499"
+			tasks: [{
+				id: "0811C0729719E44B"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_4"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"65DDB848537EC89D"
+				"19B6AFFCE6FD7499"
+			]
+			dependency_requirement: "one_completed"
+			id: "5D17DD07F74C9ECA"
+			tasks: [{
+				id: "2F2E3C90D5D478E6"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_5"
+				criterion: ""
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			dependencies: [
+				"65DDB848537EC89D"
+				"5D17DD07F74C9ECA"
+			]
+			dependency_requirement: "one_completed"
+			id: "3442C449E1C789CD"
+			tasks: [{
+				id: "6D0FC1817FFC18B4"
+				type: "advancement"
+				advancement: "tetra:upgrades/hammer_6"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Scrolls"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"You'll find varius scrolls around and about via different means to buff your tool creation capabilities."
+				""
+				"These can be placed to enchacne tools made on a nearby Workbench"
+			]
+			id: "040C7818D3075204"
+			tasks: [{
+				id: "09CE981C4E822434"
+				type: "item"
+				item: "tetra:scroll_rolled"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["040C7818D3075204"]
+			id: "11D8580CB1C12350"
+			tasks: [{
+				id: "46B71A6724087106"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_sturdy"
+				criterion: ""
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["040C7818D3075204"]
+			id: "116E0441EF06145D"
+			tasks: [{
+				id: "6845C5F9D8D18FD0"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_howling"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["040C7818D3075204"]
+			id: "311101D1EBDB695F"
+			tasks: [{
+				id: "2DFBFA64378DAC0B"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_efficiency"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["040C7818D3075204"]
+			id: "3DA67E421AD90D79"
+			tasks: [{
+				id: "6AB5F328A3482C97"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_warforge"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			dependencies: ["040C7818D3075204"]
+			id: "280CD7A229B5709D"
+			tasks: [{
+				id: "5F13038593FE0731"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_throwing"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["040C7818D3075204"]
+			id: "30F168EE8B224BAA"
+			tasks: [{
+				id: "14632CCBE0B322E0"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_gild"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			dependencies: ["040C7818D3075204"]
+			id: "18CFFB8B03830361"
+			tasks: [{
+				id: "7CE859F97ABC0875"
+				type: "advancement"
+				advancement: "tetra:spelunking/find_scroll_expertise"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Can be broken open at a Workbench with a hammer"]
+			id: "1882A27C5F6044A8"
+			tasks: [{
+				id: "1AD434BECF51920B"
+				type: "item"
+				item: "tetra:geode"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "Of Greater Knoldge"
+			dependencies: ["1882A27C5F6044A8"]
+			id: "5BBF29BACBB0CCDC"
+			tasks: [{
+				id: "119E8A8547947916"
+				type: "item"
+				item: "tetra:pristine_lapis"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			subtitle: "Perfectly Formed"
+			dependencies: ["1882A27C5F6044A8"]
+			id: "38604AD17236D290"
+			tasks: [{
+				id: "404BECEA82AE6055"
+				type: "item"
+				item: "tetra:pristine_emerald"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "Shinyest of them all"
+			dependencies: ["1882A27C5F6044A8"]
+			id: "48EBA5CA6F764AAA"
+			tasks: [{
+				id: "231A0047EBBD5C92"
+				type: "item"
+				item: "tetra:pristine_diamond"
+			}]
+		}
+		{
+			title: "Salvaged Materials"
+			x: 4.5d
+			y: 3.0d
+			description: ["Can be salavaged from the ruins and can be used to enhance your items."]
+			dependencies: ["222A6A56260C3DD2"]
+			id: "7375AAAA0FF78509"
+			tasks: [
+				{
+					id: "3DDE6B12A39BF238"
+					type: "item"
+					item: "tetra:forged_bolt"
+				}
+				{
+					id: "1B732CDB0E71AF31"
+					type: "item"
+					item: "tetra:metal_scrap"
+				}
+				{
+					id: "57BF951E4A5F3B08"
+					type: "item"
+					item: "tetra:forged_mesh"
+				}
+				{
+					id: "29D745A00C2F1DF1"
+					type: "item"
+					item: "tetra:forged_beam"
+				}
+			]
+		}
+		{
+			title: "Forge Hammer Upgrades"
+			x: 6.0d
+			y: 3.5d
+			description: ["Can both be used to upgrade the forge hammer and create certain tool upgrades."]
+			dependencies: ["222A6A56260C3DD2"]
+			id: "560CB6087128CAD8"
+			tasks: [
+				{
+					id: "367B12A87946255B"
+					type: "item"
+					item: "tetra:lubricant_dispenser"
+				}
+				{
+					id: "3388265FDEDC34E1"
+					type: "item"
+					item: "tetra:planar_stabilizer"
+				}
+				{
+					id: "1AAAE1ADDBA4B402"
+					type: "item"
+					item: "tetra:combustion_chamber"
+				}
+				{
+					id: "4F07F0CC610AB798"
+					type: "item"
+					item: {
+						id: "tetra:magmatic_cell"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Artifacts of the Past"
+			x: 7.5d
+			y: 3.0d
+			description: ["Specialty items that can be used to make powerful tools and tool upgrades."]
+			dependencies: ["222A6A56260C3DD2"]
+			id: "2529483FE21C3A82"
+			tasks: [
+				{
+					id: "6432703DBAFFB6D1"
+					type: "item"
+					item: "tetra:stonecutter"
+				}
+				{
+					id: "1DC402B3A418DB09"
+					type: "item"
+					item: "tetra:earthpiercer"
+				}
+				{
+					id: "1F7EBA3409DA5293"
+					type: "item"
+					item: "tetra:quick_latch"
+				}
+				{
+					id: "02F483EAA9AC434A"
+					type: "item"
+					item: "tetra:chthonic_extractor"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			description: ["A rare structure found deep underground in certain bioms."]
+			id: "222A6A56260C3DD2"
+			tasks: [{
+				id: "6E3C166E6FDB1116"
+				type: "advancement"
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Can hold the tools you need to work on your varius items."]
+			id: "7123E7E46CBC61A2"
+			tasks: [{
+				id: "2B900AD1A4424C97"
+				type: "item"
+				item: "tetra:rack"
+			}]
+		}
+	]
 }

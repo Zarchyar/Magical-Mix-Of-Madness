@@ -17,4 +17,13 @@
 		{ item: "losttrinkets:tha_golem", weight: 8 }
 		{ item: "losttrinkets:dragon_breath", weight: 8 }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "master_trinkets"
+	}
 }

@@ -6,5 +6,1318 @@
 	title: "Create"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "The Begining"
+			description: [
+				"Create has realy well done system to explain its components in game "
+				"Simply hold W while hovering your mouse over the item to acces the ingame info panel"
+				""
+				"While this Quest section will give some general dirrection keep in mind create encurages creativity and there are many ways to acheive the same goal."
+				""
+				"Most components work on moving contraptions opening up lots of unique automation options."
+			]
+			id: "41388E06628C3D49"
+			tasks: [{
+				id: "0A9A17A76F048F57"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Basic Mechanical Power Movement"
+			x: 2.0d
+			y: 0.0d
+			description: ["The most basic ways to move mechanical power arround."]
+			dependencies: ["41388E06628C3D49"]
+			id: "6355ACCB1B8D82D2"
+			tasks: [
+				{
+					id: "46B4F71DC0F3D54B"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "2DF4D4B3937F7220"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "1B51E2F494ECB0A7"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			subtitle: "Water power"
+			description: [
+				"Can also be powered with lava."
+				"Bubble collums can also be used to push the wheel"
+			]
+			dependencies: ["6355ACCB1B8D82D2"]
+			id: "50AB3B14934C6FB7"
+			tasks: [{
+				id: "6472FDDA034D2FD7"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Hand Power"
+			dependencies: ["6355ACCB1B8D82D2"]
+			id: "01E482DFDC5AB75B"
+			tasks: [{
+				id: "1386842A529571F1"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Wind Power"
+			description: [
+				"Can use wool as sails along with a few other select blocks"
+				""
+				"Needs at least 8 sails to function with more sail blocks increasing power and speed"
+			]
+			dependencies: ["6355ACCB1B8D82D2"]
+			id: "4D605910E9666A77"
+			tasks: [{
+				id: "02C78422C2F02B39"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Can extend how far moving contraptions hold blocks without the need for glue."]
+			dependencies: ["41388E06628C3D49"]
+			id: "7A171B29C842B288"
+			tasks: [
+				{
+					id: "17828E3451EE32FE"
+					type: "item"
+					item: "create:radial_chassis"
+				}
+				{
+					id: "1D2DA18AF7E799F6"
+					type: "item"
+					item: "create:secondary_linear_chassis"
+				}
+				{
+					id: "5BEEB0A7946D37B3"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			subtitle: "Beginings of Automation"
+			description: [
+				"The 3 prior items are power sources that you have imidiate acces too."
+				""
+				"The windmill works best once you have additional items but can be used right away"
+			]
+			dependencies: [
+				"4D605910E9666A77"
+				"01E482DFDC5AB75B"
+				"50AB3B14934C6FB7"
+			]
+			dependency_requirement: "one_completed"
+			id: "088E9D388DB21ED6"
+			tasks: [{
+				id: "40914D1DDC858D38"
+				type: "checkmark"
+				title: "Turning Away"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			subtitle: "Compacting"
+			description: ["Used in varius recipies"]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "12E8FC516DDBF318"
+			tasks: [
+				{
+					id: "32F0B3456D4EE355"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "1F72DB943C83B61D"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+		}
+		{
+			title: "Belts"
+			x: 5.0d
+			y: -2.0d
+			subtitle: "Moving the stuff"
+			description: ["The primary blocks for moving items around."]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "6D61AC7FA9AC64C1"
+			tasks: [
+				{
+					id: "2850092547B73E6F"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "1F7D0AAD14CBDAF2"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Sails"
+			description: [
+				"You dont have to use these but they make constructing the wind mill easyer"
+				""
+				"The sail frames also work even without the wool added."
+			]
+			dependencies: ["4D605910E9666A77"]
+			id: "36945E4A25895E3A"
+			tasks: [{
+				id: "384FB948148550B8"
+				type: "item"
+				item: "create:white_sail"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: ["Can be used to blow things around or as anouther generation option"]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "21B8204F3F611788"
+			tasks: [{
+				id: "1B71FB9059A74DC2"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["6D61AC7FA9AC64C1"]
+			id: "2A17C3606053D4D7"
+			tasks: [{
+				id: "286CA6C3A628C42E"
+				type: "item"
+				item: "create:nozzle"
+			}]
+		}
+		{
+			title: "Power Modification"
+			x: 2.0d
+			y: -1.5d
+			description: ["Theae items provide additional ways to move and handle mechanical power"]
+			dependencies: ["6355ACCB1B8D82D2"]
+			id: "6C84A8B31F5EBFA5"
+			tasks: [
+				{
+					id: "7DE4A51C7FC26F3A"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+				{
+					id: "10EF0ABFDDC5B83A"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "20EF119F71ADE774"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+				{
+					id: "4BE9228A30FCC937"
+					type: "item"
+					item: "create:gearshift"
+				}
+				{
+					id: "0A14F4EC44F751BD"
+					type: "item"
+					item: "create:clutch"
+				}
+				{
+					id: "57A79BF358464A72"
+					type: "item"
+					item: "create:adjustable_chain_gearshift"
+				}
+			]
+		}
+		{
+			title: "Numbers Going Up"
+			x: 2.0d
+			y: 1.5d
+			description: ["Thease allow you to get a visual rendering of the state of your mechanical machinery."]
+			dependencies: ["6355ACCB1B8D82D2"]
+			id: "6BBB577B350130C1"
+			tasks: [
+				{
+					id: "2C1E3AD5761F37DC"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "7E8C8C590639F5E3"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+		}
+		{
+			title: "Decorative Bits"
+			x: 0.0d
+			y: -2.0d
+			subtitle: "Fancy"
+			description: ["Can be used to change up the look of several of the blocks from the mod"]
+			dependencies: ["41388E06628C3D49"]
+			id: "28F4F1AEAB65A701"
+			tasks: [
+				{
+					id: "6B959766462FEE9E"
+					type: "item"
+					item: "create:wooden_bracket"
+				}
+				{
+					id: "672EB8159E433EE8"
+					type: "item"
+					item: "create:metal_bracket"
+				}
+				{
+					id: "55678578690F63AF"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+				{
+					id: "26FC7361112D380C"
+					type: "item"
+					item: "create:copper_casing"
+				}
+				{
+					id: "428D9E64C92E8588"
+					type: "item"
+					item: "create:brass_casing"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			description: ["Block breaking for contraptions"]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "7E90F70A06E26D8B"
+			tasks: [{
+				id: "71A344BF4C283C62"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			description: [
+				"Around and around"
+				"Allows creation of rotating contraptions"
+				""
+				"Very handy for things like crop or tree farms"
+			]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "208C513B5FCA5866"
+			tasks: [{
+				id: "5A0CC71E3405F4EE"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			subtitle: "Long Piston"
+			description: ["Like a piston but can be longer and uses mechanical power"]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "0958EDF5A53C8B91"
+			tasks: [
+				{
+					id: "27B4B50C3F8AC225"
+					type: "item"
+					item: "create:mechanical_piston"
+				}
+				{
+					id: "48DBAA67146938FD"
+					type: "item"
+					item: "create:piston_extension_pole"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			dependencies: ["6D61AC7FA9AC64C1"]
+			id: "72509D7BFFBC3EE8"
+			tasks: [{
+				id: "3AD14121B0505FB3"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			subtitle: "Back and forth"
+			description: ["Allows liner movement of components along the shafts length"]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "51CE58D35E48928B"
+			tasks: [
+				{
+					id: "37D923ADE434162C"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "2AC52AACB005CD28"
+					type: "item"
+					item: "create:gantry_shaft"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Multiblock Minecarts"
+			dependencies: ["41388E06628C3D49"]
+			id: "68AE6020AF4AE586"
+			tasks: [{
+				id: "782A5B568978B929"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			subtitle: "Toggleable Slime Block"
+			description: ["Like a one dirrectional slime block that can toggled on and off"]
+			dependencies: ["41388E06628C3D49"]
+			id: "4F5C810BC03746C8"
+			tasks: [{
+				id: "5AD38CC173A197CC"
+				type: "item"
+				item: "create:sticker"
+			}]
+		}
+		{
+			title: "Flatening"
+			x: 10.5d
+			y: 0.0d
+			description: ["Create your first plates"]
+			dependencies: ["12E8FC516DDBF318"]
+			id: "5E22FA6FFD4EB732"
+			tasks: [{
+				id: "7D525D4687B3562B"
+				type: "item"
+				title: "Any #forge:plates"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:plates"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["088E9D388DB21ED6"]
+			id: "57756C8E9BC115AB"
+			tasks: [
+				{
+					id: "13336779A80698D1"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7A73EE6946B9F060"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4D1AF23F50857542"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: -2.0d
+			description: ["Lets you see lots of extra info particularly handy when debugging contraptions."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "6BC76F5DBFFA9B06"
+			tasks: [{
+				id: "0CF05ADAC1C25F11"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.0d
+			description: ["A incredibly handy tool for modifieing varius blocks."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "7129D1C9091F43A4"
+			tasks: [{
+				id: "7192C45371608A8C"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			title: "Fluid Management"
+			x: 12.5d
+			y: 1.0d
+			subtitle: "Moving the fluid"
+			description: ["If you can make a pool of 10,000 blocks of fluid the hose pully will treat it as an infinit source."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "6BC80506537D57E4"
+			tasks: [
+				{
+					id: "12CBF1BA573A02C7"
+					type: "item"
+					item: "create:fluid_tank"
+				}
+				{
+					id: "5E667E42709F9BF1"
+					type: "item"
+					item: "create:hose_pulley"
+				}
+				{
+					id: "64B3D1850CE58A6C"
+					type: "item"
+					item: "create:item_drain"
+				}
+				{
+					id: "09E1914EEBB63B06"
+					type: "item"
+					item: "create:spout"
+				}
+				{
+					id: "48F2BD8BF78862A2"
+					type: "item"
+					item: "create:portable_fluid_interface"
+				}
+				{
+					id: "14A845984B92FE67"
+					type: "item"
+					item: "create:fluid_valve"
+				}
+				{
+					id: "786D5FE9C1C7F217"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "09D119D8D4791E47"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "2053862F56FD37E3"
+					type: "item"
+					item: "create:copper_valve_handle"
+				}
+				{
+					id: "7F523B23BF5F9C86"
+					type: "item"
+					item: "create:smart_fluid_pipe"
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			subtitle: "Copy and Paste"
+			description: ["Thease items allow shareing contraptions and structures between players and even across worlds."]
+			dependencies: ["41388E06628C3D49"]
+			id: "2E7AE94F3627E44C"
+			tasks: [
+				{
+					id: "1B4FA6CC23E6AEC9"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "5CF0D45D6AD92875"
+					type: "item"
+					item: "create:schematic_and_quill"
+				}
+				{
+					id: "2A8682B6EC1C2CDC"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+				{
+					id: "1A481CB7A9C6944E"
+					type: "item"
+					item: "create:schematic_table"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 1.0d
+			subtitle: "Super Sticky"
+			description: ["For glueing blocks together. I recomend using the chassis where posible as the glue spots are entities."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "45E5B2D6473C9FF1"
+			tasks: [{
+				id: "1BE3958D0324D159"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			subtitle: "Mixing it up"
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "0D4E58191E5C9B4E"
+			tasks: [
+				{
+					id: "7AE3C2C1D6A813A6"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2A422AF0F98CE39F"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "Blaze Burner"
+			x: 14.5d
+			y: 0.0d
+			description: ["Capture a blaze to heat up your stuff."]
+			dependencies: ["0D4E58191E5C9B4E"]
+			id: "166D0768CE83B8C6"
+			tasks: [
+				{
+					id: "10AF10BACCDEBB24"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "1E4494B429F4272F"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: 0.0d
+			description: ["Used for more advanced machinery."]
+			dependencies: ["166D0768CE83B8C6"]
+			id: "4A66656DD070C043"
+			tasks: [{
+				id: "4555CE800FB41D13"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.0d
+			subtitle: "Drop Down"
+			description: [
+				"Can be used like a vertical hopper but can move 16 items at a time."
+				""
+				"Additionaly can move items upwords with a fan."
+			]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "7D366FD519614311"
+			tasks: [{
+				id: "7C407CF171393D28"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "5EB8966B90755F9E"
+			tasks: [{
+				id: "010100DB756800B9"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			subtitle: "Fellin Trees"
+			description: ["Can cut down full trees in a go."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "12EA9C4864F70B39"
+			tasks: [{
+				id: "20748662EDB8D400"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.0d
+			subtitle: "Crop Farm"
+			description: ["Harvest and replants crops"]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "097C7F36E3160B3B"
+			tasks: [{
+				id: "74F66F1A80539C0C"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			description: ["Vertical motion for contraptions."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "594D0EAF4B037F8E"
+			tasks: [{
+				id: "6E62DCE7AF125386"
+				type: "item"
+				item: "create:rope_pulley"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			subtitle: "Yeet"
+			description: ["Fun item and entity transportation by lauching them along."]
+			dependencies: ["5E22FA6FFD4EB732"]
+			id: "6259FFE8BAB48E15"
+			tasks: [{
+				id: "3B17CD8FA9380E05"
+				type: "item"
+				item: "create:weighted_ejector"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			dependencies: ["088E9D388DB21ED6"]
+			id: "4508F259212BA449"
+			tasks: [{
+				id: "7AC66CC3160A4030"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			title: "Toolbox"
+			x: -1.0d
+			y: -1.5d
+			dependencies: ["41388E06628C3D49"]
+			id: "18F266CD9E7EE344"
+			tasks: [{
+				id: "1F71342F25A3823F"
+				type: "item"
+				title: "Any #create:toolboxes"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+			}]
+		}
+		{
+			title: "Advanced Redstone"
+			x: -1.0d
+			y: 1.5d
+			description: ["Assorted redstone components added by create."]
+			dependencies: ["41388E06628C3D49"]
+			id: "0BE415B07E8F9272"
+			tasks: [
+				{
+					id: "3AEC0AC5C8A077F5"
+					type: "item"
+					item: "create:pulse_repeater"
+				}
+				{
+					id: "55821CFEFDB06A4D"
+					type: "item"
+					item: "create:adjustable_repeater"
+				}
+				{
+					id: "42CD3B39C7DE8CC7"
+					type: "item"
+					item: "create:adjustable_pulse_repeater"
+				}
+				{
+					id: "73664CD0788C27A2"
+					type: "item"
+					item: "create:powered_latch"
+				}
+				{
+					id: "587DD90A6999ED34"
+					type: "item"
+					item: "create:powered_toggle_latch"
+				}
+				{
+					id: "77BB19F91AE06DED"
+					type: "item"
+					item: "create:analog_lever"
+				}
+				{
+					id: "0CDFD472903CD753"
+					type: "item"
+					item: "create:redstone_link"
+				}
+				{
+					id: "287D6F300871FC4A"
+					type: "item"
+					item: {
+						id: "create:linked_controller"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 22.5d
+			y: 0.0d
+			description: ["Automatic Shaped Crafting"]
+			dependencies: ["4A66656DD070C043"]
+			id: "3C433595CA636B87"
+			tasks: [{
+				id: "0F51370602405852"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -1.0d
+			subtitle: "Garbbing all the stuff"
+			description: ["Can be set up with many imputs and outputs respecting filters on brass funnels."]
+			dependencies: ["4A66656DD070C043"]
+			id: "4EF4A087DE4B5A9C"
+			tasks: [{
+				id: "1417CE0341334AC0"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: 19.5d
+			y: -1.0d
+			description: ["Allows moving machines to interface with stactic ones."]
+			dependencies: ["4A66656DD070C043"]
+			id: "426661A4311A2FDD"
+			tasks: [{
+				id: "26CE7EC4E4B1B939"
+				type: "item"
+				item: "create:portable_storage_interface"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 1.0d
+			description: [
+				"Fancyer vertions of their andesite varients."
+				""
+				"Have additional filtering and size controle settings."
+			]
+			dependencies: ["4A66656DD070C043"]
+			id: "7A920A903FEE4CA7"
+			tasks: [
+				{
+					id: "784BB777EF8ED415"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+				{
+					id: "09A981280EA6F9E9"
+					type: "item"
+					item: "create:brass_tunnel"
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			description: ["A storage block that can have its internal buffer adjust for those time you just need a single stack in backlog."]
+			dependencies: ["4A66656DD070C043"]
+			id: "2082DDEC83473E37"
+			tasks: [{
+				id: "79A715A77DA66615"
+				type: "item"
+				item: "create:adjustable_crate"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -2.5d
+			subtitle: "Advanced Observer"
+			description: ["Advanced vertions of observers with additional filtering and detection options."]
+			dependencies: ["4A66656DD070C043"]
+			id: "6BC02969D40F5641"
+			tasks: [
+				{
+					id: "21D7008B87D229C9"
+					type: "item"
+					item: "create:stockpile_switch"
+				}
+				{
+					id: "7A3D71765BF7405F"
+					type: "item"
+					item: "create:content_observer"
+				}
+			]
+		}
+		{
+			x: 19.5d
+			y: 1.0d
+			subtitle: "For whom the bell tolls"
+			dependencies: ["4A66656DD070C043"]
+			id: "3C96A011FA011352"
+			tasks: [{
+				id: "755A75434F5AE334"
+				type: "item"
+				item: "create:peculiar_bell"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 2.0d
+			description: ["Can hightlight areas dark enougth for mob spawning."]
+			dependencies: ["3C96A011FA011352"]
+			hide: true
+			id: "7EFCF5FF73FCDA52"
+			tasks: [{
+				id: "5E667538FDAD4394"
+				type: "item"
+				item: "create:haunted_bell"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 2.5d
+			subtitle: "Clicky Machine"
+			description: ["Can automate certain prosses needing left or right clicks."]
+			dependencies: ["4A66656DD070C043"]
+			id: "78179F7A49B6F919"
+			tasks: [{
+				id: "3A63FD8656014E70"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 2.5d
+			description: ["Allows setting the speed of output with less space than just using cogs."]
+			dependencies: ["4A66656DD070C043"]
+			id: "776FFBFB91C3F476"
+			tasks: [{
+				id: "2DB281CC28E7FC22"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			description: [
+				"Displays the redstone level of the imput signal"
+				""
+				"Can also be used for other decorative uses."
+			]
+			dependencies: ["4A66656DD070C043"]
+			id: "101C01BA80F185B0"
+			tasks: [{
+				id: "043494558FC648FF"
+				type: "item"
+				item: "create:nixie_tube"
+			}]
+		}
+		{
+			x: 19.0d
+			y: -2.0d
+			description: ["Like a chute but with more controle settings."]
+			dependencies: ["4A66656DD070C043"]
+			id: "63992863522108DB"
+			tasks: [{
+				id: "7AE5FE7D4FD76FF0"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -2.5d
+			description: ["When given a redstone signal will run the series of preset operations."]
+			dependencies: ["4A66656DD070C043"]
+			id: "4E0EE46C414AE046"
+			tasks: [{
+				id: "7CEF84B3E18045BF"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 2.0d
+			dependencies: ["4A66656DD070C043"]
+			id: "234389A5FB907B26"
+			tasks: [
+				{
+					id: "65C10798D5A40748"
+					type: "item"
+					item: {
+						id: "create:filter"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
+					}
+				}
+				{
+					id: "7912323BCDDF0489"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			subtitle: "Fancy Time Pieces"
+			description: ["Decorative items for showing off the current time in game."]
+			dependencies: ["088E9D388DB21ED6"]
+			id: "4B3E116DA0839A7F"
+			tasks: [
+				{
+					id: "4ED2380A064F91C8"
+					type: "item"
+					item: "create:cuckoo_clock"
+				}
+				{
+					id: "5F2E800AF06143D4"
+					type: "item"
+					item: "create:clockwork_bearing"
+				}
+			]
+		}
+		{
+			x: 22.5d
+			y: -1.5d
+			subtitle: "Furnace Power"
+			description: [
+				"Generates large amounts of mechanical energy with a hight stress tolerance when connected to an active furnace"
+				""
+				"A blast furnace will generate with even higher stress tolerence and rpms."
+			]
+			dependencies: ["3C433595CA636B87"]
+			id: "5851FDB66950F981"
+			tasks: [
+				{
+					id: "36A89DA6DB6D1609"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+				{
+					id: "3539C9CAD878F682"
+					type: "item"
+					item: "create:flywheel"
+				}
+			]
+		}
+		{
+			x: 21.0d
+			y: -1.0d
+			subtitle: "Reach for the sky"
+			description: ["When held in the off hand extends how far you can interact with the world."]
+			dependencies: ["3C433595CA636B87"]
+			id: "5002FCAFC7D3771C"
+			tasks: [{
+				id: "05F886C6D284F421"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 21.0d
+			y: 1.0d
+			subtitle: "Food fight"
+			description: ["Fires different foods to do damage"]
+			dependencies: ["3C433595CA636B87"]
+			id: "1260E75C125D0495"
+			tasks: [{
+				id: "255C1671545410DA"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Electrical Components"
+			x: 22.5d
+			y: 2.0d
+			description: [
+				"There is no advantage of using the copper wire over the gold wire when connecting things together."
+				""
+				"Thease can be used to \"store\" mechanical power for later."
+			]
+			dependencies: ["3C433595CA636B87"]
+			id: "055D789F752C9E47"
+			tasks: [
+				{
+					id: "412A9F1FFDAF39B9"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+				{
+					id: "33C237FFAF7255A3"
+					type: "item"
+					item: "createaddition:accumulator"
+				}
+				{
+					id: "7FCD8BA8F209B7DB"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "30AB3EE7CE679E7B"
+					type: "item"
+					item: "createaddition:tesla_coil"
+				}
+				{
+					id: "381B1C4C78D5EA0F"
+					type: "item"
+					item: "createaddition:copper_spool"
+				}
+				{
+					id: "125A698F42F1ECDD"
+					type: "item"
+					item: "createaddition:connector"
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: -2.5d
+			description: ["Operates at the same speed and power as a furnace."]
+			dependencies: ["5851FDB66950F981"]
+			id: "56712B7C64CF41DE"
+			tasks: [{
+				id: "1E947B51AF2E132E"
+				type: "item"
+				item: "createaddition:furnace_burner"
+			}]
+		}
+		{
+			x: 23.0d
+			y: -2.5d
+			description: ["Operates at the same speed and power as a blast furnace."]
+			dependencies: ["5851FDB66950F981"]
+			id: "1904C8AF729317B9"
+			tasks: [{
+				id: "79E08398B04618F3"
+				type: "item"
+				item: "createaddition:crude_burner"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 0.0d
+			description: ["Allows Grinding things that are too hard for the Millstone"]
+			dependencies: ["3C433595CA636B87"]
+			id: "30D65E0B8FCDAF9F"
+			tasks: [{
+				id: "702F2C90EE6D4430"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 26.5d
+			y: 0.0d
+			dependencies: ["30D65E0B8FCDAF9F"]
+			id: "368C7C60396024E4"
+			tasks: [{
+				id: "37EB3D3016493458"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 28.5d
+			y: 0.0d
+			dependencies: ["368C7C60396024E4"]
+			id: "666E0351B96BA3DE"
+			tasks: [{
+				id: "4D8585D499B1ED39"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 29.5d
+			y: 1.0d
+			subtitle: "Empowered by electricity"
+			dependencies: ["666E0351B96BA3DE"]
+			id: "6CC58FE768760E71"
+			tasks: [{
+				id: "2AA575AE0E80F43C"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -1.0d
+			subtitle: "Absorbed the light"
+			dependencies: ["666E0351B96BA3DE"]
+			id: "33ADB1255F990B0F"
+			tasks: [{
+				id: "4AD9B592A24A1794"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+		}
+		{
+			x: 30.0d
+			y: 0.0d
+			subtitle: "Forged in the void"
+			dependencies: ["666E0351B96BA3DE"]
+			id: "155FD2487B94BDF4"
+			tasks: [{
+				id: "742710AA21CD4A13"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+		}
+		{
+			x: 31.0d
+			y: 2.5d
+			subtitle: "Shockingly Powerful"
+			description: ["Acts as both a melee and ranged weapon"]
+			dependencies: ["6CC58FE768760E71"]
+			id: "354865D2413A2A77"
+			tasks: [{
+				id: "116941247E32D01F"
+				type: "item"
+				item: {
+					id: "createaddition:overcharged_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 31.0d
+			y: -2.5d
+			subtitle: "Perfectly Balanced"
+			description: ["Can be used to sey up areas of perfectly symectrical placing when you place one block it will get mirrored around the set point and placed."]
+			dependencies: ["33ADB1255F990B0F"]
+			id: "4DE3EF426CE28A7B"
+			tasks: [{
+				id: "29BA8CF985B598EE"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+		}
+		{
+			x: 32.0d
+			y: 0.0d
+			description: [
+				"Capable of left clicking right clicking and sneak clicking."
+				""
+				"Can be provided with power to click faster."
+			]
+			dependencies: [
+				"6CC58FE768760E71"
+				"155FD2487B94BDF4"
+				"33ADB1255F990B0F"
+			]
+			id: "5E7D36B853C0FE18"
+			tasks: [{
+				id: "39AC0277E00B8021"
+				type: "item"
+				item: "clickmachine:auto_clicker"
+			}]
+		}
+	]
 }

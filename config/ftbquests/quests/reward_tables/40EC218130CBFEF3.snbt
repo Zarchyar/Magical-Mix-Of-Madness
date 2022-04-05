@@ -15,4 +15,13 @@
 		{ item: "losttrinkets:oxalis", weight: 4 }
 		{ item: "losttrinkets:golden_skull", weight: 4 }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "elite_trinkets"
+	}
 }

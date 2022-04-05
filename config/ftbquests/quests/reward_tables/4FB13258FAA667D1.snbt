@@ -71,4 +71,13 @@
 		{ item: "losttrinkets:mad_aura" }
 		{ item: "losttrinkets:broken_totem" }
 	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "trinkets"
+	}
 }
