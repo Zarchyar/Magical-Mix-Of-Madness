@@ -89,3 +89,14 @@ craftingTable.addShaped("adams_apple", <item:sons_of_sins:rotten_apple>, [
     [<item:astralsorcery:nocturnal_powder>, <item:minecraft:apple>, <item:astralsorcery:nocturnal_powder>],
     [<item:progressivebosses:nether_star_shard>, <item:upgradednetherite:corrupt_upgraded_netherite_ingot>, <item:progressivebosses:nether_star_shard>]
 ]);
+//Click Machine
+craftingTable.removeByName("clickmachine:auto_clicker");
+<recipetype:create:mechanical_crafting>.addRecipe("click_machine", <item:clickmachine:auto_clicker>, [
+[<tag:items:forge:storage_blocks/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:storage_blocks/brass>],
+[<tag:items:forge:plates/brass>, <item:create:deployer>, <item:createaddition:electric_motor>, <item:create:shadow_steel>, <item:createaddition:electric_motor>, <item:create:deployer>, <tag:items:forge:plates/brass>],
+[<tag:items:forge:plates/brass>, <item:createaddition:accumulator>, <item:create:shadow_steel>, <item:create:refined_radiance>, <item:create:shadow_steel>, <item:createaddition:accumulator>, <tag:items:forge:plates/brass>],
+[<tag:items:forge:plates/brass>, <item:create:shadow_steel>, <item:create:refined_radiance>, <item:createaddition:overcharged_alloy>, <item:create:refined_radiance>, <item:create:shadow_steel>, <tag:items:forge:plates/brass>],
+[<tag:items:forge:plates/brass>, <item:createaddition:accumulator>, <item:create:shadow_steel>, <item:create:refined_radiance>, <item:create:shadow_steel>, <item:createaddition:accumulator>, <tag:items:forge:plates/brass>],
+[<tag:items:forge:plates/brass>, <item:create:deployer>, <item:createaddition:electric_motor>, <item:create:shadow_steel>, <item:createaddition:electric_motor>, <item:create:deployer>, <tag:items:forge:plates/brass>],
+[<tag:items:forge:storage_blocks/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:storage_blocks/brass>]
+]);
