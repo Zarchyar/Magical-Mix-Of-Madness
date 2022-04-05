@@ -64,7 +64,7 @@
       
       // Weight for fey gems to spawn
       // Minimum: 0
-      "weight": 10
+      "weight": 5
     }
   },
   
