@@ -1,0 +1,29 @@
+{
+    "armorSetName": "terracotta",
+    "head": {
+      "itemKey": "ceramics:clay_helmet"
+    },
+    "chest": {
+      "itemKey": "ceramics:clay_chestplate"
+    },
+    "legs": {
+      "itemKey": "ceramics:clay_leggings"
+    },
+    "boots": {
+      "itemKey": "ceramics:clay_boots"
+    },
+    "fullSetBonuses": [
+      {
+        "type": "effect",
+        "name": "minecraft:slowness",
+        "value": 1,
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:resistance",
+        "value": 0,
+        "interactionType": "self"
+      }
+    ]
+  }

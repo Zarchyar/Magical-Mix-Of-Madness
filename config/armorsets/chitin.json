@@ -1,0 +1,33 @@
+{
+    "armorSetName": "chitin",
+    "head": {
+      "itemKey": "druidcraft:chitin_helmet"
+    },
+    "chest": {
+      "itemKey": "druidcraft:chitin_chestplate"
+    },
+    "legs": {
+      "itemKey": "druidcraft:chitin_leggings"
+    },
+    "boots": {
+      "itemKey": "druidcraft:chitin_boots"
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.knockback_resistance",
+        "value": 0.5,
+        "modifierUUID": "9630b632-6634-4861-821f-5136bf1b8fb0",
+        "description": "Increased Knockback Resistance",
+        "interactionType": "self"
+      },
+      {
+        "type": "attribute",
+        "name": "omnis:magic_proficiency",
+        "value": 4,
+        "modifierUUID": "da56c393-8599-4e08-89de-ba0722af473c",
+        "description": "Increased Magic Proficiency",
+        "interactionType": "self"
+      }
+    ]
+  }

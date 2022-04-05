@@ -1,0 +1,33 @@
+{
+    "armorSetName": "ravaged",
+    "head": {
+      "itemKey": "omnis:ravaged_helmet"
+    },
+    "chest": {
+      "itemKey": "omnis:ravaged_chestplate"
+    },
+    "legs": {
+      "itemKey": "omnis:ravaged_leggings"
+    },
+    "boots": {
+      "itemKey": "omnis:ravaged_boots"
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.knockback_resistance",
+        "value": 0.4,
+        "modifierUUID": "8a476528-d39b-4fff-8bf9-b78ec658bfd9",
+        "description": "Increased Knockback Resistance",
+        "interactionType": "self"
+      },
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.attack_damage",
+        "value": 2,
+        "modifierUUID": "b005609d-0912-4513-bcf4-32483404fdec",
+        "description": "Increased Attack Damage",
+        "interactionType": "self"
+      }
+    ]
+  }

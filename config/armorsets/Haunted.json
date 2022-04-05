@@ -1,0 +1,43 @@
+{
+    "armorSetName": "haunted",
+    "head": {
+      "itemKey": "omnis:haunted_helmet"
+    },
+    "chest": {
+      "itemKey": "omnis:haunted_chestplate"
+    },
+    "legs": {
+      "itemKey": "omnis:haunted_leggings"
+    },
+    "boots": {
+      "itemKey": "omnis:haunted_boots"
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.knockback_resistance",
+        "value": 0.6,
+        "modifierUUID": "8a476528-d39b-4fff-8bf9-b78ec658bfd9",
+        "description": "Increased Knockback Resistance",
+        "interactionType": "self"
+      },
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.attack_damage",
+        "value": 0.25,
+        "modifierUUID": "110cdfe3-7409-4ee3-a8e0-529885cbe5a1",
+        "description": "Increased Attack Damage",
+        "attributeOperation" : 2,
+        "interactionType": "self"
+      },
+      {
+        "type": "attribute",
+        "name": "omnis:magic_proficiency",
+        "value": 0.5,
+        "modifierUUID": "77556e9e-6df2-4cbf-9aa6-bd1d815eb391",
+        "description": "Increased Magic Proficiency",
+        "attributeOperation" : 2,
+        "interactionType": "self"
+      }
+    ]
+  }

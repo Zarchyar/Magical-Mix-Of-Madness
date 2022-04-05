@@ -1,0 +1,63 @@
+{
+    "armorSetName": "engineer",
+    "head": {
+      "itemKey": "create:diving_helmet",
+      "mixAndMatch":[
+        "create:goggles"
+      ]
+    },
+    "chest": {
+      "itemKey": "create:copper_backtank"
+    },
+    "boots": {
+      "itemKey": "create:diving_boots"
+    },
+    "offHand": {
+      "itemKey": "create:extendo_grip",
+      "mixAndMatch":[
+        "create:wand_of_symmetry",
+        "create:wrench",
+        "create:potato_cannon"
+      ]
+    },
+    "partialBonusRequiredAmount": 3,
+    "partialSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "forge:reach_distance",
+        "value": 5.0,
+        "modifierUUID": "ae3c0785-ce1f-4fab-b783-feba7a602227",
+        "description": "+5 Reach Distance",
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:haste",
+        "value": 1,
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:night_vision",
+        "value": 0,
+        "description": "Night Vision",
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:jump_boost",
+        "value": 1,
+        "interactionType": "self"
+      }
+    ],
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "forge:reach_distance",
+        "value": 5.0,
+        "modifierUUID": "9f472f45-39de-4e36-b122-d122e4f50999",
+        "description": "+5 Reach Distance (Total of +10)",
+        "interactionType": "self"
+      }
+    ]
+  }

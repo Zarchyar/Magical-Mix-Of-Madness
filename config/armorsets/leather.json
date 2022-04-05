@@ -1,0 +1,35 @@
+{
+  "armorSetName": "leather",
+  "head": {
+    "itemKey": "minecraft:leather_helmet"
+  },
+  "chest": {
+    "itemKey": "minecraft:leather_chestplate"
+  },
+  "legs": {
+    "itemKey": "minecraft:leather_leggings"
+  },
+  "boots": {
+    "itemKey": "minecraft:leather_boots"
+  },
+  "partialBonusRequiredAmount": 3,
+  "partialSetBonuses":[
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 3.0,
+      "modifierUUID": "9e1ffd64-8a3d-4172-8c6e-373014d0f261",
+      "description": "+3 HP",
+      "interactionType": "self"
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:speed",
+      "value": 1,
+      "description": "Speed 2",
+      "interactionType": "self"
+    }
+  ]
+}

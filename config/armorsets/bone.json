@@ -1,0 +1,36 @@
+{
+  "armorSetName": "bone",
+  "head": {
+    "itemKey": "druidcraft:bone_helmet",
+    "mixAndMatch":[
+      "minecraft:skeleton_skull"
+    ]
+  },
+  "chest": {
+    "itemKey": "druidcraft:bone_chestplate"
+  },
+  "legs": {
+    "itemKey": "druidcraft:bone_leggings"
+  },
+  "boots": {
+    "itemKey": "druidcraft:bone_boots"
+  },
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "value": 3.0,
+      "modifierUUID": "61ecbb4f-c77a-45ab-b117-53b985cc3d9b",
+      "description": "+3 HP",
+      "interactionType": "self"
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.knockback_resistance",
+      "value": 0.2,
+      "modifierUUID": "419fca15-cbfc-4898-86d0-fd6e17e9955b",
+      "description": "Increased Knockback Resistance",
+      "interactionType": "self"
+    }
+  ]
+}

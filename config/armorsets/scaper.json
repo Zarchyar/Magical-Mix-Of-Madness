@@ -1,0 +1,69 @@
+{
+    "armorSetName": "scrapper",
+    "head": {
+      "itemKey": "minecraft:turtle_helmet",
+      "mixAndMatch":[
+        "minecraft:skeleton_skull",
+        "minecraft:wither_skeleton_skull",
+        "minecraft:zombie_head",
+        "minecraft:creeper_head",
+        "minecraft:dragon_head",
+        "minecraft:player_head",
+        "environmental:thief_hood",
+        "quark:forgotten_hat",
+        "outvoted:wildfire_helmet",
+        "minecraft:shulker_shell"
+      ]
+    },
+    "chest": {
+      "itemKey": "minecraft:elytra",
+      "mixAndMatch":[
+        "environmental:healer_pouch",
+        "undergarden:masticated_chestplate",
+        "autumnity:snail_shell_chestplate"
+      ]
+    },
+    "legs": {
+      "itemKey": "minecraft:golden_leggings",
+      "mixAndMatch":[
+        "environmental:architect_belt",
+        "environmental:yak_pants"
+      ]
+    },
+    "boots": {
+      "itemKey": "majruszs_difficulty:hermes_boots",
+      "mixAndMatch":[
+        "environmental:wanderer_boots"
+      ]
+    },
+    "fullSetBonuses": [
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.attack_speed",
+        "value": 1,
+        "modifierUUID": "8786e560-fb6d-469a-a8ec-566945c13ee7",
+        "description": "Increased Attack Speed",
+        "interactionType": "self"
+      },
+      {
+        "type": "attribute",
+        "name": "minecraft:generic.knockback_resistance",
+        "value": 0.5,
+        "modifierUUID": "4ca68468-9043-4225-9a14-00ab040c5c22",
+        "description": "Increased Knockback Resistance",
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:luck",
+        "value": 1,
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:resistance",
+        "value": 0,
+        "interactionType": "self"
+      }
+    ]
+  }

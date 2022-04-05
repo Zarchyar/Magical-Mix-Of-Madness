@@ -1,0 +1,38 @@
+{
+    "armorSetName": "moonstone",
+    "head": {
+      "itemKey": "druidcraft:moonstone_helmet"
+    },
+    "chest": {
+      "itemKey": "druidcraft:moonstone_chestplate"
+    },
+    "legs": {
+      "itemKey": "druidcraft:moonstone_leggings"
+    },
+    "boots": {
+      "itemKey": "druidcraft:moonstone_boots"
+    },
+    "partialBonusRequiredAmount": 2,
+    "partialSetBonuses": [
+      {
+        "type": "effect",
+        "name": "minecraft:glowing",
+        "value": 0.0,
+        "interactionType": "self"
+      }
+    ],
+    "fullSetBonuses": [
+      {
+        "type": "effect",
+        "name": "minecraft:night_vision",
+        "value": 0.0,
+        "interactionType": "self"
+      },
+      {
+        "type": "effect",
+        "name": "minecraft:invisibility",
+        "value": 0.0,
+        "interactionType": "self"
+      }
+    ]
+  }
