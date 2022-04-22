@@ -51,9 +51,9 @@ craftingTable.addShaped("hellshelf", <item:apotheosis:hellshelf>, [
 ]);
 craftingTable.removeByName("apotheosis:enchantment_library");
 craftingTable.addShaped("enchantment_library", <item:apotheosis:enchantment_library>, [
-    [<tag:items:botania:runes/mana>, <item:apotheosis:endshelf>, <item:eidolon:unholy_symbol>],
-    [<item:apotheosis:glowing_hellshelf>, <tag:items:forge:nether_stars>, <item:apotheosis:heart_seashelf>],
-    [<item:astralsorcery:celestial_crystal>, <tag:items:forge:storage_blocks/netherite>, <item:mana-and-artifice:mote_arcane>]
+    [<item:quark:ancient_tome>, <tag:items:forge:nether_stars>, <item:quark:ancient_tome>],
+    [<item:apotheosis:endshelf>, <item:quark:crate>, <item:apotheosis:endshelf>],
+    [<item:quark:ancient_tome>, <item:minecraft:netherite_ingot>, <item:quark:ancient_tome>]
 ]);
 //Botany Pots
 craftingTable.removeByRegex("botanypots:crafting/hopper_.*");
@@ -100,3 +100,6 @@ craftingTable.removeByName("clickmachine:auto_clicker");
 [<tag:items:forge:plates/brass>, <item:create:deployer>, <item:createaddition:electric_motor>, <item:create:shadow_steel>, <item:createaddition:electric_motor>, <item:create:deployer>, <tag:items:forge:plates/brass>],
 [<tag:items:forge:storage_blocks/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:plates/brass>, <tag:items:forge:storage_blocks/brass>]
 ]);
+//Porcelain
+craftingTable.removeByName("ceramics:unfired_porcelain");
+<recipetype:create:mixing>.addRecipe("unfired_porcelain", "none", <item:ceramics:unfired_porcelain>*4, [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <tag:items:forge:gems/quartz>]);
