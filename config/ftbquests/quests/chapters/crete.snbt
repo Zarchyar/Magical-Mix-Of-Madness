@@ -4,6 +4,7 @@
 	order_index: 9
 	filename: "crete"
 	title: "Create"
+	icon: "create:orange_toolbox"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

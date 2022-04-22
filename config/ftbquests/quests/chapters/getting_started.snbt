@@ -2929,7 +2929,7 @@
 				""
 				"The first is eterna this primariy determains the max level you can hit with the enchanting table with a cap of level 100 if you have a good setup."
 				""
-				"Next is Quanta the higher this is the lower the minimual enchanting power that can be provided."
+				"Next is Quanta this stat will increase or decresse the power by a percent think of it as a gambling value it can make you enchanting much more powerful or much weaker depending on your luck"
 				""
 				"Finally Arcana this determains the max enchanting power you can get it also makes rarer enchants more common"
 			]
@@ -3163,6 +3163,37 @@
 					}
 				}
 			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			subtitle: "Enchanting with a Twist"
+			description: [
+				"An alternate system where you pay xp for puzzel pieces that you can then asemble to enchant an item"
+				""
+				"Different colored candles from quark can change the rates of certain enchants showinf up as peices"
+			]
+			dependencies: ["22FA910363915F10"]
+			id: "74C85C1187BD2C8A"
+			tasks: [
+				{
+					id: "55B891A7B85D6146"
+					type: "item"
+					item: "quark:matrix_enchanter"
+				}
+				{
+					id: "76388299BF237DC2"
+					type: "item"
+					title: "Any #quark:candles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "quark:candles"
+						}
+					}
+				}
+			]
 		}
 	]
 }
