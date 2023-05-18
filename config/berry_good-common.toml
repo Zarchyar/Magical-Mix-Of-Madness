@@ -3,7 +3,13 @@
 
 	[tweaks.sweet_berries]
 		#If Sweet Berry Bushes require pips to place, to prevent accidental placement
-		"Berries require pips" = true
+		"Sweet Berries require pips" = true
+
+	[tweaks.glow_berries]
+		#If Cave Vines require pips to place, to prevent accidental placement
+		"Glow Berries require pips" = true
+		#If Glow Berries give Glowing upon consumption
+		"Glow Berries give Glowing" = true
 
 [items]
 

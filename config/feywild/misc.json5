@@ -4,13 +4,19 @@
   "fey_dust_ticks": 30,
   
   // Whether players should spawn with a Feywild Lexicon
-  "initial_lexicon": false,
+  "initial_lexicon": true,
   
   // Whether the players should be able to select one of the court's scrolls on first login, on first time opening the guide book or none.
   // Allowed values: book, login, none
-  "initial_scroll": "book",
+  "initial_scroll": "none",
   
-  // This determines the weight of the rune stone appearing in mineshaft treasure chests.
-  // Range: 1 - 100
-  "rune_stone_weight": 20
+  // The amount of time in seconds that the magical honey needs to respawn
+  // Minimum: 1
+  "magical_honey_timer": 1200,
+  
+  // Allows players to fly with the Fey Wings.
+  "players_can_fly": false,
+  
+  // This enables a player to summon all fey. For servers this could be set to false to encourage coop.
+  "summon_all_fey": true
 }

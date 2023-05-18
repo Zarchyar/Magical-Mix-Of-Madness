@@ -3,6 +3,8 @@
 [client]
 
 	[client.visual_options]
+		# If badge_text should override the built-in translatable text.
+		override_badge_text = false
 		# The text shown on the badge above equipped tooltips.
 		badge_text = "Equipped"
 		# The color of the text shown on the badge above equipped tooltips.
@@ -24,5 +26,5 @@
 		# If tool comparisons should compare only the same types of tools (can't compare a sword to an axe, for example).
 		strict = false
 		# Blacklist of items to show comparisons for.  Add item IDs to prevent them from being compared when hovered over or equipped.
-		blacklist = ["sophisticatedbackpacks:backpack", "sophisticatedbackpacks:iron_backpack", "sophisticatedbackpacks:gold_backpack", "sophisticatedbackpacks:diamond_backpack", "sophisticatedbackpacks:netherite_backpack"]
+		blacklist = []
 

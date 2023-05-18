@@ -12,40 +12,6 @@
 		#
 		allowHoneyFluidTanksFeedingCompat = true
 
-	["Mod Compatibility Options"."Caves and Cliffs Backport Options"]
-		# 
-		#-----------------------------------------------------
-		#
-		# Spawn Caves and Cliffs Backport Candles in Bee Dungeons.
-		#
-		allowCACCandlesBeeDungeon = true
-		# 
-		#-----------------------------------------------------
-		#
-		# Spawn Caves and Cliffs Backport Candles in Spider Infested Bee Dungeons.
-		#
-		allowCACCandlesSpiderBeeDungeon = true
-
-	["Mod Compatibility Options"."Charm Options"]
-		# 
-		#-----------------------------------------------------
-		#
-		# Spawn Charm Candles in Bee Dungeons.
-		#
-		allowCCandlesBeeDungeon = true
-		# 
-		#-----------------------------------------------------
-		#
-		# Spawn Charm Candles in Spider Infested Bee Dungeons.
-		#
-		allowCCandlesSpiderBeeDungeon = true
-		# 
-		#-----------------------------------------------------
-		#
-		# Add new trades to Charm's Beekeeper Villager.
-		#
-		allowCharmTradeCompat = true
-
 	["Mod Compatibility Options"."Pokecube Options"]
 		# 
 		#-----------------------------------------------------
@@ -53,108 +19,142 @@
 		# Spawn Pokecube's bee-like pokemon in The Bumblezone and from Honey Brood Blocks.
 		#
 		spawnPokecubeBeePokemon = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Pokecube's bee-like pokemon that spawn in The Bumblezone will get
+		# Protection of the Hive effect. Attacking these pokemon in bumblezone will
+		# give you Wrath of the Hive effect and swarmed of angry bees.
+		#
+		beePokemonGetsProtectionEffect = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Chance of a Bee spawning from Honeycomb Brood Blocks being replaced by Pokecube's bee pokemon.
+		# 0 is no PC's mobs and 1 is max PC's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfPokecubeBeePokemon = 0.05
 
 	["Mod Compatibility Options"."Resourceful Bees Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Spawn Resourceful Bees in The Bumblezone and from Honey Brood Blocks
-		# alongside regular bees at a 1/15th chance when spawning regular bees.
+		# Spawn Resourceful Bees in The Bumblezone and from Honey Brood Blocks alongside
+		# regular bees at a spawnrateOfResourcefulBeesMobs chance when spawning regular bees.
+		# You can datapack the_bumblezone:resourcefulbees/spawnable_from_brood_block entity tag
+		# and/or datapack the_bumblezone:resourcefulbees/spawnable_from_chunk_creation entity tag
+		# for more control of what kinds of bees spawns.
 		#
 		spawnResourcefulBeesBeesMob = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Spawn Resourceful Bees's various honeycomb variants in The Bumblezone
-		# at all kinds of heights and height bands. Start exploring to find 
-		# where they spawn!
+		# Chance of a Bee spawning from Honeycomb Brood Blocks in Bumblezone dimension being replaced by Resourceful Bee's mob.
+		# 0 is no RB's mobs and 1 is max EB's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfResourcefulBeesMobsBrood = 0.03
+		# 
+		#-----------------------------------------------------
+		#
+		# Chance of a regular Bee spawning in Bumblezone being replaced by Resourceful Bee's mob.
+		# 0 is no RB's mobs and 1 is max RB's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfResourcefulBeesMobsOther = 0.008
+		# 
+		#-----------------------------------------------------
+		#
+		# How much of Bee Dungeons is made of honeycombs from the_bumblezone:resourcefulbees/spawns_in_bee_dungeons block tag.
+		# 0 is no RB's honeycombs and 1 is max RB's honeycombs.
+		#
+		#Range: 0.0 ~ 1.0
+		RBOreHoneycombSpawnRateBeeDungeon = 0.06
+		# 
+		#-----------------------------------------------------
+		#
+		# How much of Spider Infested Bee Dungeons is made of honeycombs from the_bumblezone:resourcefulbees/spawns_in_spider_infested_bee_dungeons block tag.
+		# 0 is no RB's honeycombs and 1 is max RB's honeycombs.
+		#
+		#Range: 0.0 ~ 1.0
+		RBOreHoneycombSpawnRateSpiderBeeDungeon = 0.12
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Resourceful Bees's various honeycomb variants in The Bumblezone at all
+		# kinds of heights and height bands. Start exploring to find where they spawn!
 		# 
 		# NOTE: Will require a restart of the world to take effect. 
 		#
-		spawnResourcefulBeesHoneycombVariants = true
+		spawnResourcefulBeesHoneycombVeins = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Spawn Resourceful Bees's Wax Block as part of The Bumblezone's worldgen.
+		# Allow filled Bee Jars to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
 		#
-		RBBeesWaxWorldgen = true
+		allowResourcefulBeesBeeJarRevivingEmptyBroodBlock = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Use Resourceful Bees's canSpawnInWorld config on their bee data
-		# to know what bees to spawn in Bumblezone. This will stack with
-		# RBBlacklistedBees config entry that Bumblezone uses.
-		# Bees blacklisted from either will not spawn and their combs will not spawn either.
-		# 
-		# NOTE: Will require a restart of the world to take effect. 
+		# Allow Honeycomb Brood blocks fed by Dispenser to be able to have chance of spawning Resourceful Bees's bees.
 		#
-		useSpawnInWorldConfigFromRB = false
-		# 
-		#-----------------------------------------------------
-		#
-		# Blacklist what Resourceful Bees bees should not spawn in Bumblezone. 
-		# Separate each entry with a comma. Example: "resourcefulbees:iron,resourcefulbees:coal"
-		# 
-		# Note: Blacklisted bees will automatically blacklist their respective combs from worldgen too.
-		RBBlacklistedBees = ""
-		# 
-		#-----------------------------------------------------
-		#
-		# How much of Bee Dungeons is made of ore-based honeycombs.
-		# 0 is no or honeycombs, 1 is max ore honeycombs, and default is 0.3D
-		#
-		#Range: 0.0 ~ 1.0
-		RBOreHoneycombSpawnRateBeeDungeon = 0.3
-		# 
-		#-----------------------------------------------------
-		#
-		# How rare good ore-based Honeycombs (diamonds, ender, emerald, etc) are 
-		# in Bee Dungeons. 
-		# Higher numbers means more rare. Default rate is 3.
-		#
-		#Range: 1 ~ 1001
-		RBGreatHoneycombRarityBeeDungeon = 2
-		# 
-		#-----------------------------------------------------
-		#
-		# How much of Spider Infested Bee Dungeons is made of ore-based honeycombs.
-		# 0 is no or honeycombs, 1 is max ore honeycombs, and default is 0.1D
-		#
-		#Range: 0.0 ~ 1.0
-		RBOreHoneycombSpawnRateSpiderBeeDungeon = 0.1
-		# 
-		#-----------------------------------------------------
-		#
-		# How rare good ore-based Honeycombs (diamonds, ender, emerald, etc) are 
-		# in Spider Infested Bee Dungeons. 
-		# Higher numbers means more rare. Default rate is 2.
-		#
-		#Range: 1 ~ 1001
-		RBGreatHoneycombRaritySpiderBeeDungeon = 2
-		# 
-		#-----------------------------------------------------
-		#
-		# Add new trades to Resourceful Bees's Beekeeper Villager.
-		#
-		allowResorucefulBeesTradeCompat = true
+		allowResourcefulBeesSpawnFromDispenserFedBroodBlock = true
 
 	["Mod Compatibility Options"."Productive Bees Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Spawn Productive Bees in The Bumblezone and from Honey Brood Blocks
-		# alongside regular bees at a 1/15th chance when spawning regular bees.
+		# Spawn Productive Bees in The Bumblezone and from Honey Brood Blocks alongside
+		# regular bees at a spawnrateOfProductiveBeesMobs chance when spawning regular bees.
 		#
 		spawnProductiveBeesBeesMob = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Spawn Productive Bees's various honeycomb variants in The Bumblezone
-		# at all kinds of heights and height bands. Start exploring to find 
-		# where they spawn! 
+		# Chance of a Bee spawning in Bumblezone or from Honeycomb Brood Blocks being replaced by Productive Bee's mob.
+		# 0 is no PB's mobs and 1 is max PB's mobs.
+		#
+		#Range: 0.0 ~ 1.0
+		spawnrateOfProductiveBeesMobs = 0.03
+		# 
+		#-----------------------------------------------------
+		#
+		# Spawn Productive Bees's various honeycomb variants in The Bumblezone at all
+		# kinds of heights and height bands. Start exploring to find where they spawn!
+		# 
 		# NOTE: Will require a restart of the world to take effect. 
 		#
 		spawnProductiveBeesHoneycombVariants = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees combs should be able to spawn in Bumblezone dungeons.
+		allowedCombsForDungeons = ["productivebees:diamond", "productivebees:iron", "productivebees:coal", "productivebees:redstone", "productivebees:copper", "productivebees:lapis", "productivebees:gold", "productivebees:emerald", "productivebees:obsidian", "productivebees:experience", "productivebees:magmatic", "productivebees:amethyst", "productivebees:prismarine", "productivebees:crystalline", "productivebees:sugarbag", "productivebees:glowing", "productivebees:frosty", "productivebees:slimy", "productivebees:silky", "productivebees:blazing", "productivebees:ender", "productivebees:skeletal", "productivebees:ghostly", "productivebees:zombie"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees combs should be able to spawn in Bumblezone as ores.
+		allowedCombsAsOres = ["productivebees:iron", "productivebees:redstone", "productivebees:copper", "productivebees:gold", "productivebees:magmatic", "productivebees:crystalline", "productivebees:glowing", "productivebees:blazing", "productivebees:skeletal", "productivebees:ghostly"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow what Productive Bees bees should be able to spawn in Bumblezone. 
+		blacklistedBees = ["productivebees:diamond", "productivebees:iron", "productivebees:coal", "productivebees:redstone", "productivebees:copper", "productivebees:lapis", "productivebees:gold", "productivebees:emerald", "productivebees:obsidian", "productivebees:experience", "productivebees:magmatic", "productivebees:amethyst", "productivebees:prismarine", "productivebees:crystalline", "productivebees:sugarbag", "productivebees:glowing", "productivebees:frosty", "productivebees:slimy", "productivebees:silky", "productivebees:blazing", "productivebees:ender", "productivebees:skeletal", "productivebees:ghostly", "productivebees:zombie"]
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow filled Bee Cages to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowProductiveBeesBeeCageRevivingEmptyBroodBlock = true
+		# 
+		#-----------------------------------------------------
+		#
+		# Allow Honeycomb Brood blocks fed by Dispenser to be able to have chance of spawning Productive Bees's bees.
+		#
+		allowProductiveBeesSpawnFromDispenserFedBroodBlock = true
 		# 
 		#-----------------------------------------------------
 		#
@@ -165,123 +165,81 @@
 		#-----------------------------------------------------
 		#
 		# How much of Bee Dungeons is made of ore-based honeycombs.
-		# 0 is no or honeycombs, 1 is max ore honeycombs, and default is 0.3D
+		# 0 is no PB's honeycombs and 1 is max PB's honeycombs.
 		#
 		#Range: 0.0 ~ 1.0
-		PBOreHoneycombSpawnRateBeeDungeon = 0.3
-		# 
-		#-----------------------------------------------------
-		#
-		# How rare good ore-based Honeycombs (diamonds, ender, emerald, etc) are 
-		# in Bee Dungeons. 
-		# Higher numbers means more rare. Default rate is 3.
-		#
-		#Range: 1 ~ 1001
-		PBGreatHoneycombRarityBeeDungeon = 2
+		PBOreHoneycombSpawnRateBeeDungeon = 0.045
 		# 
 		#-----------------------------------------------------
 		#
 		# How much of Spider Infested Bee Dungeons is made of ore-based honeycombs.
-		# 0 is no or honeycombs, 1 is max ore honeycombs, and default is 0.1D
+		# 0 is no PB's honeycombs and 1 is max PB's honeycombs.
 		#
 		#Range: 0.0 ~ 1.0
 		PBOreHoneycombSpawnRateSpiderBeeDungeon = 0.1
-		# 
-		#-----------------------------------------------------
-		#
-		# How rare good ore-based Honeycombs (diamonds, ender, emerald, etc) are 
-		# in Spider Infested Bee Dungeons. 
-		# Higher numbers means more rare. Default rate is 2.
-		#
-		#Range: 1 ~ 1001
-		PBGreatHoneycombRaritySpiderBeeDungeon = 2
-		# 
-		#-----------------------------------------------------
-		#
-		# Blacklist what Productive Bees bees should not spawn in Bumblezone. 
-		# Separate each entry with a comma. Example: "productivebees:iron,productivebees:coal"
-		# 
-		# Note: this is only for the entities. To blacklist blocks as well,
-		# use a datapack to add blacklisted blocks to this tag:
-		# data/the_bumblezone/tags/blocks/blacklisted_productive_bees_combs.json
-		#
-		PBBlacklistedBees = ""
 
-	["Mod Compatibility Options"."Potion of Bees Options"]
+	["Mod Compatibility Options"."Friends and Foes Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Potion of Bees item to turn Empty Honeycomb Brood blocks 
-		# back into Honeycomb Brood Blocks with a larva in it. (affects Dispenser too)
+		# Adds Bumblezone items to Friends and Foes's Beekeeper trades!
 		#
-		allowPotionOfBeesCompat = true
+		allowFriendsAndFoesBeekeeperTradesCompat = true
+
+	["Mod Compatibility Options"."Quark Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Splash Potion of Bees item to turn Empty Honeycomb Brood 
-		# blocks back into Honeycomb Brood Blocks with a larva in it when 
-		# the potion is thrown and splashed near the block. (affects Dispenser too)
+		# Adds Bumblezone items symbols to Quark's enchantment tooltips!
 		#
-		allowSplashPotionOfBeesCompat = true
+		injectBzItemsIntoQuarkEnchantmentTooltipsCompat = true
 
 	["Mod Compatibility Options"."Buzzier Bees Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Bottles Bees item to turn Empty Honeycomb Brood blocks 
-		# back into Honeycomb Brood Blocks with a larva in it. (affects Dispenser too)
+		# Allow Bee Bottle to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
 		#
-		allowBottledBeesCompat = true
+		allowBeeBottleRevivingEmptyBroodBlock = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Honey Wand to take honey from Filled Porous Honeycomb Block 
-		# and put honey into Porous Honeycomb Block without angering bees.
+		# Allow Buzzier Bees's Crystallized honey block to spawn in patches on surfaces in Bumblezone Dimension. 
+		# Requires a game restart to take effect (close game and re-open) 
 		#
-		allowHoneyWandCompat = true
+		spawnCrystallizedHoneyInDimension = true
 		# 
 		#-----------------------------------------------------
 		#
-		# Place Buzzier Bees's Crystallized Honey Blocks on the /r/n surface of land around sea level and above.
+		# Allow Buzzier Bees's Honey Tile block to spawn mainly in caves inside Bumblezone Dimension. 
+		# Requires a game restart to take effect (close game and re-open) 
 		#
-		crystallizedHoneyWorldgen = true
+		spawnHoneyTilesInDimension = true
+
+	["Mod Compatibility Options"."Potion of Bees Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Bee Dungeons to have normal unscented candles./r/n
-		allowRegularCandlesBeeDungeon = true
+		# Allow Potion of Bees to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowPotionOfBeesRevivingEmptyBroodBlock = true
+
+	["Mod Compatibility Options"."Goodall Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Bee Dungeons to have scented candles that gives status effects./r/n
-		allowScentedCandlesBeeDungeon = true
+		# Allow Bottled Bees to turn Empty Honeycomb Brood blocks into 
+		# a regular Honeycomb Brood Block with a larva inside! 
+		#
+		allowGoodallBottledBeesRevivingEmptyBroodBlock = true
+
+	["Mod Compatibility Options"."Beekeeper Options"]
 		# 
 		#-----------------------------------------------------
 		#
-		# Allow Spider Infested Bee Dungeons to have scented candles that gives status effects./r/n
-		allowScentedCandlesSpiderBeeDungeon = true
-		# 
-		#-----------------------------------------------------
+		# Adds Bumblezone items to Beekeeper mod's Beekeeper trades!
 		#
-		# How rare are powerful candles in Bee Dungeons. 
-		# Higher numbers means more rare.
-		# Default rate is 2.
-		#
-		#Range: 0 ~ 10
-		powerfulCandlesRarityBeeDungeon = 2
-		# 
-		#-----------------------------------------------------
-		#
-		# How rare are powerful candles in Spider Infested Bee Dungeons. 
-		# Higher numbers means more rare.
-		# Default rate is 2.
-		#
-		#Range: 0 ~ 10
-		powerfulCandlesRaritySpiderBeeDungeon = 0
-		# 
-		#-----------------------------------------------------
-		#
-		# Add new trades to Buzzier Bees's Beekeeper Villager.
-		#
-		allowBuzzierBeesTradeCompat = true
+		allowBeekeeperTradesCompat = true
 

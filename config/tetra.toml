@@ -14,17 +14,10 @@
 	toolbelt_curio_only = false
 	#Multiplier for magic capacity gains, increasing this may be useful when having a large set enchantments added by other mods
 	#Range: 0.0 ~ 1.7976931348623157E308
-	magic_cap_multiplier = 2.0
-	#Enable the look advancement trigger, used for some advancements. 
-	look_trigger = true
-	#Allow the reach attribute to modify the distance at which players can hit entities
-	entity_reach = true
+	magic_cap_multiplier = 1.0
 
 #World generation settings
 [worldgen]
-	#The number of geodes that should generate per chunk, set to 0 to disable
-	#Range: 0 ~ 65536
-	geode_density = 120
 	#Generates features in the world, further configuration available in "tetra/data/structures/"
 	features = true
 	#Used to limit how deep the feature generator will recurse into feature children, helps to avoid recursive loops and cascading worldgen in 3d-party generation features
@@ -75,10 +68,10 @@
 	hone_crossbow_integrity_multiplier = 32
 	#The base value for number of uses required before a single headed implement can be honed
 	#Range: > -2147483648
-	hone_single_headed_base = 48
+	hone_single_headed_base = 120
 	#Integrity multiplier for single headed implement honing, a value of 2 would cause an implement which uses 3 integrity to require 2*3 times as many uses before it can be honed
 	#Range: > -2147483648
-	hone_single_headed_integrity_multiplier = 32
+	hone_single_headed_integrity_multiplier = 60
 
 #Toggles & config for experimental features
 [experimental]
